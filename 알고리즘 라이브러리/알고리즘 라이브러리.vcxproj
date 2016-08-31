@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{53CF94E5-C11E-40AF-83D6-143C1CA0036D}</ProjectGuid>
+    <ProjectGuid>{AAA56A4E-F180-49C3-B4B4-C3E907F968DE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>풀은것들</RootNamespace>
+    <RootNamespace>알고리즘라이브러리</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,8 +142,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="11502 세 개의 소수 문제.cpp" />
-    <ClCompile Include="3079 입국 심사.cpp" />
+    <ClCompile Include="Aho–Corasick string matching.cpp" />
+    <ClCompile Include="Bellman-Ford algorithm.cpp" />
+    <ClCompile Include="bipartite matching.cpp" />
+    <ClCompile Include="Dijkstra short path.cpp" />
+    <ClCompile Include="index tree.cpp" />
+    <ClCompile Include="kmp string matching.cpp" />
+    <ClCompile Include="max cost min flow.cpp" />
+    <ClCompile Include="max flow.cpp" />
+    <ClCompile Include="segment tree lazy propagation.cpp" />
+    <ClCompile Include="segment tree.cpp" />
+    <ClCompile Include="suffix array.cpp" />
+    <ClCompile Include="union find.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

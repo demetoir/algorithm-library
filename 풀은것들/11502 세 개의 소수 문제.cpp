@@ -53,12 +53,12 @@ int main() {
 		for (int i = 0; i < primesize; i++) {
 			for (int j = i; j < primesize; j++) {
 				int val = n - prime[i] - prime[j];
-				if (val >=2  && seive[val] == 0) {
+				if (val >= 2 && seive[val] == 0) {
 					ans[0] = prime[i];
 					ans[1] = prime[j];
 					ans[2] = val;
 					isfind = 1;
-				}				
+				}
 			}
 		}
 		sort(ans, ans + 3);
