@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F56CF8BA-4C48-4B0A-84F6-5197FF8C9B67}</ProjectGuid>
+    <ProjectGuid>{53CF94E5-C11E-40AF-83D6-143C1CA0036D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>문제풀이컴파일솔루션</RootNamespace>
+    <RootNamespace>풀은것들</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,10 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="소스.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Text.txt" />
+    <ClCompile Include="3079 입국 심사.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

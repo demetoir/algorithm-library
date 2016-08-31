@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "문제 풀이 컴파일 솔루션", "문제 풀이 컴파일 솔루션\문제 풀이 컴파일 솔루션.vcxproj", "{F56CF8BA-4C48-4B0A-84F6-5197FF8C9B67}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "풀은것들", "풀은것들\풀은것들.vcxproj", "{53CF94E5-C11E-40AF-83D6-143C1CA0036D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{F56CF8BA-4C48-4B0A-84F6-5197FF8C9B67}.Release|x64.Build.0 = Release|x64
 		{F56CF8BA-4C48-4B0A-84F6-5197FF8C9B67}.Release|x86.ActiveCfg = Release|Win32
 		{F56CF8BA-4C48-4B0A-84F6-5197FF8C9B67}.Release|x86.Build.0 = Release|Win32
+		{53CF94E5-C11E-40AF-83D6-143C1CA0036D}.Debug|x64.ActiveCfg = Debug|x64
+		{53CF94E5-C11E-40AF-83D6-143C1CA0036D}.Debug|x64.Build.0 = Debug|x64
+		{53CF94E5-C11E-40AF-83D6-143C1CA0036D}.Debug|x86.ActiveCfg = Debug|Win32
+		{53CF94E5-C11E-40AF-83D6-143C1CA0036D}.Debug|x86.Build.0 = Debug|Win32
+		{53CF94E5-C11E-40AF-83D6-143C1CA0036D}.Release|x64.ActiveCfg = Release|x64
+		{53CF94E5-C11E-40AF-83D6-143C1CA0036D}.Release|x64.Build.0 = Release|x64
+		{53CF94E5-C11E-40AF-83D6-143C1CA0036D}.Release|x86.ActiveCfg = Release|Win32
+		{53CF94E5-C11E-40AF-83D6-143C1CA0036D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

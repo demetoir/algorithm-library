@@ -46,7 +46,7 @@ int main() {
 	for (int i = 0; i < n; i++) si(T[i]);
 
 	ans = LLINF;
-	LL lo = 0,hi =  LLINF; 
+	LL lo = 0, hi = LLINF;
 	while (lo <= hi) {
 		LL mid = (lo + hi) / 2;
 		//printf("##%lld\n", mid);
