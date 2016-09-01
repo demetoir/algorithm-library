@@ -144,7 +144,9 @@
   <ItemGroup>
     <ClCompile Include="Aho–Corasick string matching.cpp" />
     <ClCompile Include="Bellman-Ford algorithm.cpp" />
+    <ClCompile Include="bfs.cpp" />
     <ClCompile Include="bipartite matching.cpp" />
+    <ClCompile Include="dfs.cpp" />
     <ClCompile Include="Dijkstra short path.cpp" />
     <ClCompile Include="index tree.cpp" />
     <ClCompile Include="kmp string matching.cpp" />

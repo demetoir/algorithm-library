@@ -51,5 +51,11 @@
     <ClCompile Include="kmp string matching.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="dfs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bfs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
