@@ -4,6 +4,13 @@
 //그래프 상에서 음수 사이클이 없어야한다
 //
 //문제
+//1753 최단경로 https://www.acmicpc.net/problem/1753
+//1916 최소비용 구하기 https://www.acmicpc.net/problem/1916
+//1238 파티 https://www.acmicpc.net/problem/1238
+//1504 특정한 최단경로 https://www.acmicpc.net/problem/1504
+//5427 불 https://www.acmicpc.net/problem/5427
+//2206 벽부수고 이동하기 https://www.acmicpc.net/problem/2206
+//1981 배열에서의 이동 https://www.acmicpc.net/problem/1981
 
 #include <queue>
 #include <vector>

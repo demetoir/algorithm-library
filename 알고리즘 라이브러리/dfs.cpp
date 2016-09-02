@@ -1,8 +1,16 @@
 // dfs (depth first search, 깊이 우선 탐색)
 // 시간 복잡도 O(|V| + |E|)
 //
-// 문제
-//
+//문제
+//1260 dfs와 bfs https://www.acmicpc.net/problem/1260
+//2178 미로 탐색 https://www.acmicpc.net/problem/2178
+//2589 보물섬 https://www.acmicpc.net/problem/2589
+//4963 섬의 개수 https://www.acmicpc.net/problem/4963
+//1697 숨바꼭질 https://www.acmicpc.net/problem/1697
+//11403 경로 찾기 https://www.acmicpc.net/problem/11403
+// 5014 스타트 링크 https://www.acmicpc.net/problem/5014
+//2468 안전 영역 https://www.acmicpc.net/problem/2468
+
 using namespace std;
 // 일반 그래프상에서의 dfs
 
@@ -32,8 +40,6 @@ int dy[DIRECTION_SIZE] = { 0,0,1,-1 };
 int grid_visited[MAX_N][MAX_M]; // N*M 짜리 격자 그래프에서 방문했는지 체크하는 배열
 								// false -> 아직 방문하지 않음
 								// true -> 이미 방문 했음
-
-
 void dfs(int x, int y) {
 	if (grid_visited[x][y] == true)return;
 	grid_visited[x][y] = true;

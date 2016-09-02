@@ -156,6 +156,7 @@
     <ClCompile Include="segment tree.cpp" />
     <ClCompile Include="suffix array.cpp" />
     <ClCompile Include="union find.cpp" />
+    <ClCompile Include="라이브러리 및 매크로.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

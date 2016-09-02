@@ -13,49 +13,64 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="그래프">
+      <UniqueIdentifier>{94351edd-42dc-4c7f-b4ca-ae108278040d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="네트워크 플로우">
+      <UniqueIdentifier>{d50daf4c-8748-4499-9658-e2c674cd4731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="트리">
+      <UniqueIdentifier>{500c03e3-6311-4726-a5cb-9b81c12be3a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="문자열">
+      <UniqueIdentifier>{2524e504-d8ce-49c9-8c41-cf229792b0ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="bipartite matching.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="index tree.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="segment tree.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="union find.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="segment tree lazy propagation.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="max cost min flow.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="max flow.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="suffix array.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Dijkstra short path.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Bellman-Ford algorithm.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Aho–Corasick string matching.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="kmp string matching.cpp">
+    <ClCompile Include="라이브러리 및 매크로.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="dfs.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>그래프</Filter>
     </ClCompile>
     <ClCompile Include="bfs.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="Dijkstra short path.cpp">
+      <Filter>그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="Bellman-Ford algorithm.cpp">
+      <Filter>그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="max cost min flow.cpp">
+      <Filter>네트워크 플로우</Filter>
+    </ClCompile>
+    <ClCompile Include="max flow.cpp">
+      <Filter>네트워크 플로우</Filter>
+    </ClCompile>
+    <ClCompile Include="union find.cpp">
+      <Filter>트리</Filter>
+    </ClCompile>
+    <ClCompile Include="segment tree.cpp">
+      <Filter>트리</Filter>
+    </ClCompile>
+    <ClCompile Include="segment tree lazy propagation.cpp">
+      <Filter>트리</Filter>
+    </ClCompile>
+    <ClCompile Include="index tree.cpp">
+      <Filter>트리</Filter>
+    </ClCompile>
+    <ClCompile Include="bipartite matching.cpp">
+      <Filter>네트워크 플로우</Filter>
+    </ClCompile>
+    <ClCompile Include="Aho–Corasick string matching.cpp">
+      <Filter>문자열</Filter>
+    </ClCompile>
+    <ClCompile Include="kmp string matching.cpp">
+      <Filter>문자열</Filter>
+    </ClCompile>
+    <ClCompile Include="suffix array.cpp">
+      <Filter>문자열</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

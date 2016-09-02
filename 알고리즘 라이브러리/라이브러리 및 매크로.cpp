@@ -24,9 +24,3 @@ typedef long long LL;
 #define sc(a) scanf("%c",&(a))
 #define ss(a) scanf("%s",a)
 #define pii pair<int,int>
-//////////////////////////////////////////////////////////////////////////////////////////
-
-int main() {
-
-	return 0;
-}
