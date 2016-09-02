@@ -31,9 +31,18 @@ int main() {
 	// 결과값
 	// vi= {1,2,3}
 
+	//접근 
+	vi[1];
+	//vi[1] -> 2
+
 	//개수 확인
 	vi.size();
 	//vi.size() -> 3
+
+	//vector 안의 모든 원소 접근
+	for (int i = 0; i < vi.size(); i++) {
+		vi[i];
+	}
 
 	//복사
 	vector<int> vi2;

@@ -1,5 +1,9 @@
 //queue 사용법
 //라이브러리 이름 queue
+//시간복잡도
+//push O(lg(1))
+//pop O(lg(1))
+//front O(lg(1))
 
 #include <queue>
 using namespace std;
