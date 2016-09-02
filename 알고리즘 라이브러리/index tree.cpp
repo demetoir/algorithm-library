@@ -4,8 +4,8 @@
 //update O(log n)
 
 //문제
-//boj 2934 LRH 식물
-//https://www.acmicpc.net/problem/2934
+
+//2934 LRH 식물 https://www.acmicpc.net/problem/2934
 
 
 #include <vector>
@@ -15,7 +15,6 @@ using namespace std;
 
 int n;
 vector <int>tree(n);
-
 void update(int i, int diff) {
 	while (i < n) {
 		tree[i] += diff;

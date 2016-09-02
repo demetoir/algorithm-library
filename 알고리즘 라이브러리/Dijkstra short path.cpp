@@ -119,3 +119,48 @@ int dijkstra(int start_x,int start_y) {
 		}
 	}
 }
+
+
+
+// 다잌스트라에서 최단 경로를 알고싶을경우
+#define MAX_V 100000
+#define INF 2e9
+#define MP pair<int,int>
+vector<MP>G[MAX_V];	//G[a][b].first -> 다음 정점
+					//G[a][b].second -> 다음 정점 까지 가는데 비용
+
+vector<int> dist;	//dist[i] -> 시작 정점으로 부터 다른 정점까지의 거리
+					//값이 INF 라면 갈수있는 방법이 없음
+vector<int>parent;  //parent[i] -> i정점에서 시작하는 정점으로 가는데 최단 거리로 가는
+					//경로 다음정점 
+int dijkstra(int start) {
+	queue<int> q;
+	q.push(start);
+	dist = vector<int>(MAX_V, INF);
+	dist[start] = 0;
+	parent = vector<int>(MAX_V, -1);
+	parent[start] = -1;
+	while (!q.empty()) {
+		int cur = q.front(); q.pop();
+
+		for (int i = 0; i < G[cur].size(); i++) {
+			int next = G[cur][i].first;
+			int cost = G[cur][i].second;
+
+			if (dist[next] > dist[cur] + cost) {
+				dist[next] = dist[cur] + cost;
+				parent[next] = cur;
+				q.push(next);
+			}
+		}
+	}
+}
+void print_path(int end) {
+	if (dist[end] == INF) {
+		printf("path not exist\n");
+		return;
+	}
+	for (int p = end; parent[p] != -1; p = parent[p]) {
+		printf("%d ->%d", p, parent[p]);
+	}
+}

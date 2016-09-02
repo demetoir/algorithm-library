@@ -25,11 +25,11 @@
     <Filter Include="문자열">
       <UniqueIdentifier>{2524e504-d8ce-49c9-8c41-cf229792b0ee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="라이브러리 사용법">
+      <UniqueIdentifier>{7b60266c-aa47-4ef7-9886-b4f72814e028}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="라이브러리 및 매크로.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="dfs.cpp">
       <Filter>그래프</Filter>
     </ClCompile>
@@ -71,6 +71,24 @@
     </ClCompile>
     <ClCompile Include="suffix array.cpp">
       <Filter>문자열</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 및 매크로.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="vector 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="priority_queue 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="sort 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="pair 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="queue 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
