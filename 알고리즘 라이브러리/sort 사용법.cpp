@@ -11,8 +11,9 @@ using namespace std;
 
 int main() {
 	// 일반 배열 sort
-	int A[5] = { 3,4,2,1,3 };
+	int A[5] = {3,4,2,1,3};
 	sort(A, A + 5);
+
 	//sort(A, A + A의 길이) 
 	//결과 A = {1,2,3,3,4}
 
@@ -23,6 +24,7 @@ int main() {
 	vi.push_back(2);
 	vi.push_back(1);
 	vi.push_back(3);
+
 	sort(vi.begin(), vi.end());
 	//결과 vi = {1,2,3,3,4}
 

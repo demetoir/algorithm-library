@@ -1,6 +1,7 @@
 //비교자 사용법
 //콜백 함수로 처리 한다
-
+//콜백 함수의 반환형은 bool 이어야함
+//
 #include <vector>
 #include <functional>
 #include <utility>
@@ -11,7 +12,8 @@ using namespace std;
 
 struct triple{
 	int a, b, c;
-	triple(int _a, int _b, int _c) :a(_a), b(_b), c(_c) {};
+	triple(int _a, int _b, int _c) 
+		:a(_a), b(_b), c(_c) {};
 };
 
 bool int_cmp(int a, int b) {
@@ -71,6 +73,7 @@ int main() {
 	//v_triple = {(3,2,4),(1,3,3),(2,2,1),(1,3,5),(2,1,6)}
 
 	//오름차순 sort
+
 	sort(v_int.begin(), v_int.end(), int_cmp);
 	//결과 v_int ={1,2,3,4,5}
 	sort(v_pii.begin(), v_pii.end(), pii_cmp);

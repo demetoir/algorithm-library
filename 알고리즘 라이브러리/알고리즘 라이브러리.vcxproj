@@ -150,6 +150,8 @@
     <ClCompile Include="Dijkstra short path.cpp" />
     <ClCompile Include="index tree.cpp" />
     <ClCompile Include="kmp string matching.cpp" />
+    <ClCompile Include="lis.cpp" />
+    <ClCompile Include="lowerbound 사용법.cpp" />
     <ClCompile Include="map 사용법.cpp" />
     <ClCompile Include="max cost min flow.cpp" />
     <ClCompile Include="max flow.cpp" />
@@ -158,6 +160,7 @@
     <ClCompile Include="queue 사용법.cpp" />
     <ClCompile Include="segment tree lazy propagation.cpp" />
     <ClCompile Include="segment tree.cpp" />
+    <ClCompile Include="short path first algorithm.cpp" />
     <ClCompile Include="sort 사용법.cpp" />
     <ClCompile Include="stack 사용법.cpp" />
     <ClCompile Include="suffix array.cpp" />
@@ -165,6 +168,7 @@
     <ClCompile Include="vector 사용법.cpp" />
     <ClCompile Include="라이브러리 및 매크로.cpp" />
     <ClCompile Include="비교자 사용법.cpp" />
+    <ClCompile Include="유클리드 호제법.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

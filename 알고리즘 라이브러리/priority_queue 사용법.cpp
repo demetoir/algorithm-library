@@ -52,8 +52,7 @@ int main() {
 	//pop
 	int temp = -pq.top(); 
 	pq.pop();
-
-
+	
 	//pair 를 이용한 priority_queue 사용하는 방법
 	priority_queue<pii> pq_pair;
 

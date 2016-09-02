@@ -30,15 +30,15 @@ int main() {
 	vi.push_back(2);
 	vi.push_back(3);
 	// 결과값
-	// vi= {1,2,3}
+	// vi = {-1,-1,-1,-1,-1,1,2,3}
 
 	//접근 
 	vi[1];
-	//vi[1] -> 2
+	//vi[1] -> -1
 
 	//개수 확인
 	vi.size();
-	//vi.size() -> 3
+	//vi.size() -> 8
 
 	//vector 안의 모든 원소 접근
 	for (int i = 0; i < vi.size(); i++) {

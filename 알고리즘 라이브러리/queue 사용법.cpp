@@ -20,8 +20,9 @@ int main() {
 	q.push(2);
 	q.push(3);
 	//q = {1,2,3}
-	//pop()
-	int val =q.front(); q.pop();
+
+	//pop
+	int val = q.front(); q.pop();
 	//val = 1;
 
 	// 비어있는지 검사

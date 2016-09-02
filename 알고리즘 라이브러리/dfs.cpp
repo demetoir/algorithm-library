@@ -12,8 +12,8 @@
 //2468 안전 영역 https://www.acmicpc.net/problem/2468
 
 using namespace std;
-// 일반 그래프상에서의 dfs
 
+// 일반 그래프상에서의 dfs
 #include <vector>
 #define MAX_V 100000
 
