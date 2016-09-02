@@ -93,5 +93,11 @@
     <ClCompile Include="비교자 사용법.cpp">
       <Filter>라이브러리 사용법</Filter>
     </ClCompile>
+    <ClCompile Include="stack 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="map 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

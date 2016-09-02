@@ -150,6 +150,7 @@
     <ClCompile Include="Dijkstra short path.cpp" />
     <ClCompile Include="index tree.cpp" />
     <ClCompile Include="kmp string matching.cpp" />
+    <ClCompile Include="map 사용법.cpp" />
     <ClCompile Include="max cost min flow.cpp" />
     <ClCompile Include="max flow.cpp" />
     <ClCompile Include="pair 사용법.cpp" />
@@ -158,6 +159,7 @@
     <ClCompile Include="segment tree lazy propagation.cpp" />
     <ClCompile Include="segment tree.cpp" />
     <ClCompile Include="sort 사용법.cpp" />
+    <ClCompile Include="stack 사용법.cpp" />
     <ClCompile Include="suffix array.cpp" />
     <ClCompile Include="union find.cpp" />
     <ClCompile Include="vector 사용법.cpp" />

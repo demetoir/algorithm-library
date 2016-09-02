@@ -1,9 +1,9 @@
 //queue 사용법
 //라이브러리 이름 queue
 //시간복잡도
-//push O(lg(1))
-//pop O(lg(1))
-//front O(lg(1))
+//push O(1)
+//pop O(1)
+//front O(1)
 
 #include <queue>
 using namespace std;
@@ -19,9 +19,10 @@ int main() {
 	q.push(1);
 	q.push(2);
 	q.push(3);
-
+	//q = {1,2,3}
 	//pop()
 	int val =q.front(); q.pop();
+	//val = 1;
 
 	// 비어있는지 검사
 	q.empty();

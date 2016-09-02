@@ -6,6 +6,7 @@
 #include <queue>
 using namespace std;
 #define pii pair<int,int>
+
 int main() {
 	//¼±¾ð
 	pair<int, int> p1;

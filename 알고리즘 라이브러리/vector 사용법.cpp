@@ -1,11 +1,12 @@
 //vector 사용법
 //라이브러리 이름 vector
-// 시간 복잡도
-//push_back O(lg(1))
-//size O(lg(1))v
 //
+//시간 복잡도
+//push_back O(1)
+//size O(1)
+//접근 O(1)
 //
-//
+
 #include <vector>
 using namespace std;
 
