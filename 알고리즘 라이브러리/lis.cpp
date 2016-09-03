@@ -26,15 +26,13 @@
 #include <algorithm>
 using namespace std;
 
-#define MAX_N 1000
-
 int seq1[1000];
 //쉬운 dp
 #define MAX_N 1001
 int n;
 int seq[MAX_N];
 int dp[MAX_N];
-int main() {
+int lis1() {
 	dp[0] = 1;
 	for (int i = 1; i < n; i++) {
 		dp[i] = 1;
@@ -53,9 +51,8 @@ int main() {
 //lower_bound 이용시
 int seq2[100000];
 int dp2[100000];
-int n = 100000;
-int main() {
-
+//int n = 100000;
+int lis2() {
 	dp[0] = seq[0];
 	int size = 1;
 	for (int i = 1; i < n; i++) {

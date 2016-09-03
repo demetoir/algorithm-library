@@ -7,7 +7,6 @@
 #include <functional>
 #include <vector>
 using namespace std;
-#define MAX_N;
 
 int main() {
 	// 일반 배열 sort

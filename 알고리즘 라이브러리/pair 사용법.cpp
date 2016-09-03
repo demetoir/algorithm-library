@@ -30,7 +30,7 @@ int main() {
 	//vector 와 함께 사용
 	//선언
 	vector< pair<int, int> > pair_vector;
-	vector< pii > pair_vector;
+	vector< pii > pair_vector_macro;
 
 	//삽입
 	pair_vector.push_back(p1);
@@ -50,7 +50,7 @@ int main() {
 	//queue 에서 pair 사용
 	//선언
 	queue<pair<int, int> > q;
-	queue< pii > q;
+	queue< pii > q_macro;
 	
 	//push
 	q.push(pair<int, int>(1, 2));

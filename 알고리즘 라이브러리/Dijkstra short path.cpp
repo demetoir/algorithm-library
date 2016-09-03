@@ -34,11 +34,11 @@ using namespace std;
 #define INF 2e9
 #define pii pair<int,int>
 vector<pii>G[MAX_V];	//G[a][b].first -> 다음 정점
-					//G[a][b].second -> 다음 정점 까지 가는데 비용
+						//G[a][b].second -> 다음 정점 까지 가는데 비용
 
-vector<int> dist;	//dist[i] -> 시작 정점으로 부터 다른 정점까지의 거리
-					//값이 INF 라면 갈수있는 방법이 없음
-int dijkstra(int start) {
+vector<int> dist;		//dist[i] -> 시작 정점으로 부터 다른 정점까지의 거리
+						//값이 INF 라면 갈수있는 방법이 없음
+void dijkstra(int start) {
 	queue<int> q;
 	q.push(start);
 	dist = vector<int>(MAX_V, INF);
@@ -62,16 +62,7 @@ int dijkstra(int start) {
 
 //일반적인 그래프 에서의 다잌스트라 우선 순위큐 사용
 //그냥 큐를 쓰는것보다 더 빠르다
-#define MAX_V 100000
-#define INF 2e9
-#define pii pair<int,int>
-vector<pii>G[MAX_V];	//G[a][b].first -> 다음 정점
-					//G[a][b].second -> 다음 정점 까지 가는데 비용
-
-vector<int> dist;	//dist[i] -> 시작 정점으로 부터 다른 정점까지의 거리
-					//값이 INF 라면 갈수있는 방법이 없음
-
-int dijkstra(int start) {
+void dijkstra_with_priority_queue(int start) {
 	priority_queue<pii, vector<pii>, greater<pii> > pq;
 	pq.push(pii(0,start));
 	dist = vector<int>(MAX_V, INF);
@@ -109,7 +100,7 @@ int grid_dist[MAX_N][MAX_M];// N*M 짜리 격자 그래프
 							// 시작점으로부터의 최단거리
 int grid_cost[MAX_N][MAX_M];//grid_cost[a][b] -> a,b 로 가는데 비용
 
-int dijkstra(int start_x,int start_y) {
+void dijkstra_gird(int start_x,int start_y) {
 	queue<pii> q;
 	q.push(pii(start_x,start_y));
 	memset(grid_dist, 0, sizeof(grid_dist));
@@ -139,17 +130,9 @@ int dijkstra(int start_x,int start_y) {
 
 
 // 다잌스트라에서 최단 경로를 알고싶을경우
-#define MAX_V 100000
-#define INF 2e9
-#define pii pair<int,int>
-vector<pii>G[MAX_V];	//G[a][b].first -> 다음 정점
-					//G[a][b].second -> 다음 정점 까지 가는데 비용
-
-vector<int> dist;	//dist[i] -> 시작 정점으로 부터 다른 정점까지의 거리
-					//값이 INF 라면 갈수있는 방법이 없음
 vector<int>parent;  //parent[i] -> i정점에서 시작하는 정점으로 가는데 최단 거리로 가는
 					//경로 다음정점 
-int dijkstra(int start) {
+void dijkstra_find_path(int start) {
 	queue<int> q;
 	q.push(start);
 	dist = vector<int>(MAX_V, INF);

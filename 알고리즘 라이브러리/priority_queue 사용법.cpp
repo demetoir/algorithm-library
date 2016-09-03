@@ -23,14 +23,18 @@ struct triple {
 //구조체 사용시에는 연산자 오버로딩을 이용한다
 //연산자 오버로딩시 < 이것만 된다 > 이것은 priority_queue 에서 인식 못한다
 bool operator <(triple a, triple b) {
-	//some compare logic
+	//내림차순
+	return a.a < b.a;
+
+	//오름차순
+	//return a.a > b.a;
 }
 
 int main() {
 	//선언
 	priority_queue<int>pq;
-	priority_queue<pii>pq_pair;
-	priority_queue<triple>pq_triple;
+	priority_queue<pii>pq_pair_macro;
+	priority_queue<triple>pq_triple_struct;
 
 	//초기화
 	pq = priority_queue<int>();
@@ -48,24 +52,23 @@ int main() {
 	//val -> 4
 	//pq = {3,2,1}
 
-
 	//오름차순으로 priority_queue 사용하기
 
 	//greater를 사용해서 선언으로 하기
-	priority_queue<int,vector<int>, greater<int> > pq;
+	priority_queue<int,vector<int>, greater<int> > pq_greater;
 	//priority_queue<T,vector<T>, less<T> > pq;
 
 
 	//선언은 그대로 하고 원소값의 부호를 바꾸어 사용함
-	priority_queue<int>pq;
+	priority_queue<int>pq_invese;
 
 	//push
-	int val = 5;
-	pq.push(-val);
+	val = 5;
+	pq_invese.push(-val);
 
 	//pop
 	int temp = -pq.top(); 
-	pq.pop();
+	pq_invese.pop();
 	
 	//pair 를 이용한 priority_queue 사용하는 방법
 	priority_queue<pii> pq_pair;
@@ -80,7 +83,7 @@ int main() {
 	//pq ={(4,1),(3,1),(2,3),(2,2),(1,3),(1,1)}	
 	
 	//pop
-	pii temp = pq_pair.top(); pq_pair.pop();
-	//temp -> (4,1)
+	pii temp_pair = pq_pair.top(); pq_pair.pop();
+	//temp_pair -> (4,1)
 
 }

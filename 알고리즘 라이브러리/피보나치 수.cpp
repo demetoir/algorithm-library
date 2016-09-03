@@ -5,7 +5,7 @@
 //http://j1w2k3.tistory.com/357
 //
 #include<map>
-#include <hash_map>
+#include <unordered_map>
 using namespace std;
 
 //성질
@@ -27,7 +27,7 @@ int fib1(int n) {
 //루프 dp 버전
 #define MAX_N 100000
 int fib2_val[MAX_N];
-int fib2() {
+void fib2() {
 	fib2_val[0] = 0;
 	fib2_val[1] = 1;
 	for (int i = 2; i < MAX_N; i++) {
@@ -37,12 +37,12 @@ int fib2() {
 
 //doubleding with cache 버전
 typedef long long LL;
-hash_map<LL, LL> fib3_map;
+unordered_map<LL, LL> fib3_map;
 #define pll pair<LL,LL>
-
-fib3_map.insert(pll(0, 0));
-fib3_map.insert(pll(1, 1));
-
+void init() {
+	fib3_map.insert(pll(0, 0));
+	fib3_map.insert(pll(1, 1));
+}
 LL fib3(LL n) {
 	
 	if (fib3_map.find(n) != fib3_map.end()) {

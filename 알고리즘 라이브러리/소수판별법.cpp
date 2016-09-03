@@ -45,10 +45,7 @@ void make_seive(int size) {
 }
 
 //체를 이용한 소인수 분해
-#define MAX_N 100000
-vector<int> seive;// 체
-vector<int> prime;// 소수가 들어있는 벡터
-void make_seive(int size) {
+void make_seive_with_factorize(int size) {
 	seive = vector<bool>(size, 1);
 	seive[0] = 0;
 	seive[1] = 1;
@@ -60,7 +57,7 @@ void make_seive(int size) {
 	}
 }
 
-int integer_factorization(int n, vector<int> &factor) {
+void integer_factorization(int n, vector<int> &factor) {
 	while (n > 1) {
 		factor.push_back(seive[n]);
 		n = n / seive[n];

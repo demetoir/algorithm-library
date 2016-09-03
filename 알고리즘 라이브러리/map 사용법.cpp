@@ -28,7 +28,7 @@ int main() {
 	mii[4] = 40;
 
 	//제거
-	mii.erase()
+	//mii.erase();
 	
 	//접근
 

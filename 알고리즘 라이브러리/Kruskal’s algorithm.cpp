@@ -30,7 +30,7 @@ Edge edge[MAX_E];
 
 int parent[MAX_V];
 int level[MAX_V];
-int init_union_find() {
+void init_union_find() {
 	for (int i = 0; i < MAX_V; i++) {
 		parent[i] = i;
 		level[i] = 0;
@@ -85,29 +85,29 @@ int Kruskal() {
 
 //set을 이용한 크루스칼 알고리즘
 //미완성
-set<int> vertex_set;
-bool cmp(Edge A, Edge B) {
-	return A.cost < B.cost;
-}
-
-int Kruskal() {
-	sort(edge, edge + MAX_E, cmp);
-	int totalcost = 0;
-	int edgecount = 0;
-	for (int i = 0; i < MAX_E; i++) {
-		int a = edge[i].cur;
-		int b = edge[i].next;
-		int cost = edge[i].cost;
-
-		if (find(a) == find(b)) continue;
-
-		unite(a, b);
-		totalcost += cost;
-		edgecount++;
-		if (edgecount == MAX_V)
-			break;
-	}
-}
-
-
-
+//set<int> vertex_set;
+//bool cmp(Edge A, Edge B) {
+//	return A.cost < B.cost;
+//}
+//
+//int Kruskal() {
+//	sort(edge, edge + MAX_E, cmp);
+//	int totalcost = 0;
+//	int edgecount = 0;
+//	for (int i = 0; i < MAX_E; i++) {
+//		int a = edge[i].cur;
+//		int b = edge[i].next;
+//		int cost = edge[i].cost;
+//
+//		if (find(a) == find(b)) continue;
+//
+//		unite(a, b);
+//		totalcost += cost;
+//		edgecount++;
+//		if (edgecount == MAX_V)
+//			break;
+//	}
+//}
+//
+//
+//
