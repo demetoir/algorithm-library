@@ -22,7 +22,7 @@ typedef long long LL;
 #define sll(a) scanf("%lld",&(a))
 #define sc(a) scanf("%c",&(a))
 #define ss(a) scanf("%s",a)
-#define MP pair<int,int>
+#define pii pair<int,int>
 //////////////////////////////////////////////////////////////////////////////////////////
 #define MAX_N 100001
 

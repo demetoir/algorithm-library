@@ -150,12 +150,6 @@
     <ClCompile Include="오일러 피 함수.cpp">
       <Filter>정수론</Filter>
     </ClCompile>
-    <ClCompile Include="프림 스패닝 트리.cpp">
-      <Filter>그래프</Filter>
-    </ClCompile>
-    <ClCompile Include="크루스칼 스패닝 트리.cpp">
-      <Filter>그래프</Filter>
-    </ClCompile>
     <ClCompile Include="플로이드 와샬 알고리즘.cpp">
       <Filter>그래프</Filter>
     </ClCompile>
@@ -173,6 +167,24 @@
     </ClCompile>
     <ClCompile Include="Rotating Calipers.cpp">
       <Filter>계산 기하</Filter>
+    </ClCompile>
+    <ClCompile Include="이분탐색.cpp">
+      <Filter>이분 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="set 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="hash_map 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="Kruskal’s algorithm.cpp">
+      <Filter>그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="스털링수.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="prim algorithm.cpp">
+      <Filter>그래프</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

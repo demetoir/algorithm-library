@@ -24,7 +24,7 @@ using namespace std;
 #define pii pair<int,int>
 vector<pii> G[MAX_V];
 vector<int> dist;
-int bellman_ford(int start) {
+void bellman_ford(int start) {
 	dist = vector<int>(MAX_V, INF);
 	dist[start] = 0;
 

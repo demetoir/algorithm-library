@@ -46,7 +46,7 @@ void bfs(int start) {
 
 
 // 격자(그리드) 그래프 상에서 bfs
-#define MP pair<int,int> // x,y 좌표를 저장하기위한 pair
+#define pii pair<int,int> // x,y 좌표를 저장하기위한 pair
 #define DIRECTION_SIZE 4
 #define MAX_N 1000
 #define MAX_M 1000
@@ -56,8 +56,8 @@ int grid_visited[MAX_N][MAX_M]; // N*M 짜리 격자 그래프에서 방문했는지 체크하는 
 								// false -> 아직 방문하지 않음
 								// true -> 이미 방문 했음
 void bfs(int start_x, int start_y) {
-	queue<MP> q;
-	q.push(MP(start_x, start_y));
+	queue<pii> q;
+	q.push(pii(start_x, start_y));
 	grid_visited[start_x][start_y] = true;
 	
 	while (!q.empty()) {
@@ -74,7 +74,7 @@ void bfs(int start_x, int start_y) {
 			
 			if (grid_visited[a][b] == true) continue;
 
-			q.push(MP(a, b));
+			q.push(pii(a, b));
 			grid_visited[a][b] = true;
 		}
 	}

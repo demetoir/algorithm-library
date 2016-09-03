@@ -27,28 +27,52 @@ typedef long long LL;
 #define pii pair<int,int>
 #define all(a) (a).begin(),(a).end()
 ////////////////////////////////////////////////////////////////////////
-#define MAX_N 1001
-int n;
-int seq[MAX_N];
-int dp[MAX_N];
+
+#define MAX_V 20001
+int v,e,k;
+
+vector<pii>G[MAX_V];
+vector<int>dist;
+void spf(int start) {
+	queue<int>q;
+	q.push(start);
+	dist = vector<int>(MAX_V, INF);
+	dist[start] = 0;
+	vector<bool> isinqueue(MAX_V);
+	isinqueue[start] = true;
+	while (!q.empty()) {
+		int cur = q.front();
+		q.pop();
+		isinqueue[cur] = false;
+
+		for (int i = 0; i < G[cur].size(); i++) {
+			int next = G[cur][i].first;
+			int cost = G[cur][i].second;
+
+			if (dist[next] > dist[cur] + cost) {
+				dist[next] = dist[cur] + cost;
+				if (isinqueue[next] == false) {
+					isinqueue[next] = true;
+					q.push(next);
+				}
+			}
+		}
+	}
+}
 int main() {
-	si(n);
-	for (int i = 0; i < n; i++) {
-		si(seq[i]);
+	si(v);si(e);
+	si(k);
+	for (int i = 0,a,b,c; i < e; i++) {
+		si(a);si(b);si(c);
+		G[a].push_back(pii(b, c));
 	}
 
-	dp[0] = seq[0];
-	int size = 1;
-	for (int i = 1; i < n; i++) {
-		if (dp[size - 1] < seq[i]) {
-			dp[size] = seq[i];
-			size++;
-		}
-		else {
-			dp[lower_bound(dp, dp + size, seq[i]) - dp] = seq[i];
-		}
+	spf(k);
+	for (int i = 1; i <= v; i++) {
+		if (dist[i] == INF)
+			printf("INF\n");
+		else
+			printf("%d\n", dist[i]);
 	}
-	int ans = size;
-	printf("%d\n",ans);
 	return 0;
 }

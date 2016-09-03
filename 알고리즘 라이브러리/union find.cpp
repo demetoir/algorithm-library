@@ -16,11 +16,11 @@ using namespace std;
 #define MAX_N 100000
 
 int parent[MAX_N];
-int rank[MAX_N];
+int level[MAX_N];
 void init(int size) {
 	for (int i = 0; i < size; i++) {
 		parent[i] = i;
-		rank[i] = 0;
+		level[i] = 0;
 	}
 }
 int find(int A) {
@@ -32,13 +32,13 @@ void unite(int A, int B) {
 	int Broot = find(B);
 	if (Aroot == Broot)return;
 
-	if (rank[Aroot] < rank[Broot]) {
+	if (level[Aroot] < level[Broot]) {
 		parent[Aroot] = Broot;
 	}
 	else {
 		parent[Broot] = Aroot;
 		if (parent[Aroot] == parent[Broot]) {
-			rank[Aroot] ++;
+			level[Aroot] ++;
 		}
 	}
 }

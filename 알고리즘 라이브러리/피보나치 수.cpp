@@ -1,11 +1,21 @@
 //피보나치 수 
 //
-//
-//
+//참고 자료
+//https://www.nayuki.io/page/fast-fibonacci-algorithms
+//http://j1w2k3.tistory.com/357
 //
 #include<map>
 #include <hash_map>
 using namespace std;
+
+//성질
+//f(1) ~ f(n) 합 = f(n+2) -1
+
+//f(2) ~ f(n) 짝수 합 = f(2*n+1) - 1
+
+//f(1) ~ f(n) 홀수 합 = f(2*n)
+
+//f(1) ~ f(n) 제곱의 합 = f(n)*f(n+1)
 
 //재귀버전
 int fib1(int n) {

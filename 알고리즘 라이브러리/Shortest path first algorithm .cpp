@@ -6,8 +6,9 @@
 //https://en.wikipedia.org/wiki/Shortest_Path_Faster_Algorithm
 //
 //문제
-//
-//
+//1753 최단 경로 https://www.acmicpc.net/problem/1753
+//검증 완료
+
 
 #include <queue>
 #include <vector>
@@ -39,7 +40,10 @@ void spf(int start) {
 
 			if (dist[next] > dist[cur] + cost) {
 				dist[next] = dist[cur] + cost;
-				isinqueue[next] = true;
+				if (isinqueue[next] == false) {
+					isinqueue[next] = true;
+					q.push(next);
+				}
 			}
 		}
 	}

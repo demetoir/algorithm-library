@@ -21,16 +21,19 @@
 //5427 불 https://www.acmicpc.net/problem/5427
 //2206 벽부수고 이동하기 https://www.acmicpc.net/problem/2206
 //1981 배열에서의 이동 https://www.acmicpc.net/problem/1981
+//
+//우선순위 큐 버전 검증 완료
 
 #include <queue>
 #include <vector>
+#include <functional>
 using namespace std;
 
 //일반적인 그래프 에서의 다잌스트라 일반 큐 사용
 #define MAX_V 100000
 #define INF 2e9
-#define MP pair<int,int>
-vector<MP>G[MAX_V];	//G[a][b].first -> 다음 정점
+#define pii pair<int,int>
+vector<pii>G[MAX_V];	//G[a][b].first -> 다음 정점
 					//G[a][b].second -> 다음 정점 까지 가는데 비용
 
 vector<int> dist;	//dist[i] -> 시작 정점으로 부터 다른 정점까지의 거리
@@ -61,15 +64,16 @@ int dijkstra(int start) {
 //그냥 큐를 쓰는것보다 더 빠르다
 #define MAX_V 100000
 #define INF 2e9
-#define MP pair<int,int>
-vector<MP>G[MAX_V];	//G[a][b].first -> 다음 정점
+#define pii pair<int,int>
+vector<pii>G[MAX_V];	//G[a][b].first -> 다음 정점
 					//G[a][b].second -> 다음 정점 까지 가는데 비용
 
 vector<int> dist;	//dist[i] -> 시작 정점으로 부터 다른 정점까지의 거리
 					//값이 INF 라면 갈수있는 방법이 없음
+
 int dijkstra(int start) {
-	priority_queue<MP> pq;
-	pq.push(MP(0,start));
+	priority_queue<pii, vector<pii>, greater<pii> > pq;
+	pq.push(pii(0,start));
 	dist = vector<int>(MAX_V, INF);
 	dist[start] = 0;
 
@@ -85,14 +89,16 @@ int dijkstra(int start) {
 
 			if (dist[next] > dist[cur] + cost) {
 				dist[next] = dist[cur] + cost;
-				pq.push(MP(dist[next],next));
+				pq.push(pii(dist[next],next));
 			}
 		}
 	}
 }
 
+
+
 //격자 그래프일때의 다잌스트라
-#define MP pair<int,int> // x,y 좌표를 저장하기위한 pair
+#define pii pair<int,int> // x,y 좌표를 저장하기위한 pair
 #define DIRECTION_SIZE 4
 #define MAX_N 1000
 #define MAX_M 1000
@@ -104,8 +110,8 @@ int grid_dist[MAX_N][MAX_M];// N*M 짜리 격자 그래프
 int grid_cost[MAX_N][MAX_M];//grid_cost[a][b] -> a,b 로 가는데 비용
 
 int dijkstra(int start_x,int start_y) {
-	queue<MP> q;
-	q.push(MP(start_x,start_y));
+	queue<pii> q;
+	q.push(pii(start_x,start_y));
 	memset(grid_dist, 0, sizeof(grid_dist));
 	grid_dist[start_x][start_y] = 0;
 
@@ -124,7 +130,7 @@ int dijkstra(int start_x,int start_y) {
 
 			if (grid_dist[a][b] > grid_dist[x][y] + grid_cost[a][b]) {
 				grid_dist[a][b] = grid_dist[x][y] + grid_cost[a][b];
-				q.push(MP(a,b));
+				q.push(pii(a,b));
 			}
 		}
 	}
@@ -135,8 +141,8 @@ int dijkstra(int start_x,int start_y) {
 // 다잌스트라에서 최단 경로를 알고싶을경우
 #define MAX_V 100000
 #define INF 2e9
-#define MP pair<int,int>
-vector<MP>G[MAX_V];	//G[a][b].first -> 다음 정점
+#define pii pair<int,int>
+vector<pii>G[MAX_V];	//G[a][b].first -> 다음 정점
 					//G[a][b].second -> 다음 정점 까지 가는데 비용
 
 vector<int> dist;	//dist[i] -> 시작 정점으로 부터 다른 정점까지의 거리

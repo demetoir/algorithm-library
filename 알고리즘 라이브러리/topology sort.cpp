@@ -15,11 +15,11 @@ using namespace std;
 #define MAX_V 100000
 
 vector<int> G[MAX_V]; // 그래프
-int inlevel[MAX_V]; //각정점으로 들어가는 차수
+int indegree[MAX_V]; //각정점으로 들어가는 차수
 void topology_sort(vector<int> &sorted_v) {
 	queue <int>q;
 	for (int i = 0; i < MAX_V; i++) {
-		if (inlevel[i] == 0)
+		if (indegree[i] == 0)
 			q.push(i);
 	}
 
@@ -30,8 +30,8 @@ void topology_sort(vector<int> &sorted_v) {
 
 		for (int i = 0; i < G[cur].size(); i++) {
 			int next = G[cur][i];
-			inlevel[next]-=1;
-			if (inlevel[next] == 0)
+			indegree[next]-=1;
+			if (indegree[next] == 0)
 				q.push(next);
 		}
 	}
