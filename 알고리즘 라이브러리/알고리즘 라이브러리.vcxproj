@@ -165,11 +165,16 @@
     <ClCompile Include="sort 사용법.cpp" />
     <ClCompile Include="stack 사용법.cpp" />
     <ClCompile Include="suffix array.cpp" />
+    <ClCompile Include="topology sort.cpp" />
+    <ClCompile Include="trie.cpp" />
     <ClCompile Include="union find.cpp" />
     <ClCompile Include="vector 사용법.cpp" />
     <ClCompile Include="라이브러리 및 매크로.cpp" />
+    <ClCompile Include="모듈러 연산.cpp" />
     <ClCompile Include="비교자 사용법.cpp" />
+    <ClCompile Include="소수판별법.cpp" />
     <ClCompile Include="유클리드 호제법.cpp" />
+    <ClCompile Include="이항계수.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

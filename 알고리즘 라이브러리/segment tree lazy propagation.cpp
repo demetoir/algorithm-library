@@ -5,6 +5,11 @@
 //update_tree: O(lg(N + k))
 //query_tree : O(lg(N + k))
 //
+//참고자료
+//
+//https://www.acmicpc.net/blog/view/26
+//http://bowbowbow.tistory.com/4
+//
 //문제 
 //10999 구간 합구하기2 https://www.acmicpc.net/problem/10999
 //1395 스위치 https://www.acmicpc.net/problem/1395

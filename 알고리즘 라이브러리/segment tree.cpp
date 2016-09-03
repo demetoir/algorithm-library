@@ -4,6 +4,11 @@
 //update O(log(n))
 //get O(log(n))
 //
+//참고자료
+//https://en.wikipedia.org/wiki/Segment_tree
+//https://www.acmicpc.net/blog/view/9
+//http://blog.naver.com/PostView.nhn?blogId=kks227&logNo=220791986409
+//
 //문제
 //2042 구간 합 구하기 https://www.acmicpc.net/problem/2042
 //10868 최소값 https://www.acmicpc.net/problem/10868

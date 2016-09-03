@@ -1,6 +1,10 @@
 // dfs (depth first search, 깊이 우선 탐색)
 // 시간 복잡도 O(|V| + |E|)
 //
+//참고 자료
+//https://ko.wikipedia.org/wiki/%EA%B9%8A%EC%9D%B4_%EC%9A%B0%EC%84%A0_%ED%83%90%EC%83%89
+//http://blog.eairship.kr/268
+//
 //문제
 //1260 dfs와 bfs https://www.acmicpc.net/problem/1260
 //2178 미로 탐색 https://www.acmicpc.net/problem/2178

@@ -22,6 +22,9 @@
     <Filter Include="DP">
       <UniqueIdentifier>{34057a1d-dbfe-4795-ba04-4a107305108c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="그리디">
+      <UniqueIdentifier>{1b8ff98e-0d85-4d9e-95be-ad311a4ab55b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dfs.cpp">
@@ -106,6 +109,21 @@
       <Filter>DP</Filter>
     </ClCompile>
     <ClCompile Include="Shortest path first algorithm .cpp">
+      <Filter>그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="소수판별법.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="모듈러 연산.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="이항계수.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="trie.cpp">
+      <Filter>문자열</Filter>
+    </ClCompile>
+    <ClCompile Include="topology sort.cpp">
       <Filter>그래프</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,6 +1,10 @@
 //bfs(Breadth First Search, 너비 우선 탐색)
 //시간 복잡도 O(|V| + |E|) 정점의 갯수 + 간선의 갯수
 //
+//참고 자료
+//https://en.wikipedia.org/wiki/Breadth-first_search
+//http://blog.eairship.kr/269
+//
 //문제
 //1260 dfs와 bfs https://www.acmicpc.net/problem/1260
 //2178 미로 탐색 https://www.acmicpc.net/problem/2178

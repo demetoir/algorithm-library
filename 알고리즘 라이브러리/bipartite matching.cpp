@@ -1,7 +1,24 @@
 //이분 매칭 
 // 시간복잡도 O(VE)
-//boj 11375 열혈강호
-//https://www.acmicpc.net/problem/11375
+//
+//참고 자료
+//https://en.wikipedia.org/wiki/Matching_(graph_theory)
+//http://blog.sisobus.com/2013/10/bipartite-matching.html#.V8pVvZiLQXY
+//http://blog.secmem.org/573
+//
+//문제
+//11375 열혈강호 https://www.acmicpc.net/problem/11375
+//2188 축사 배정 https://www.acmicpc.net/problem/2188
+//1298 노트북의 주인을 찾아서 https://www.acmicpc.net/problem/1298
+//1017 소수 쌍 https://www.acmicpc.net/problem/1017
+//11376 열혈강호 2 https://www.acmicpc.net/problem/11376
+//1671 상어의 저녘식사 https://www.acmicpc.net/problem/1671
+//11377 열혈강호 3 https://www.acmicpc.net/problem/11377
+//11378 열혈강호 4 https://www.acmicpc.net/problem/11378
+//2414 게시판 구멍 막기 https://www.acmicpc.net/problem/2414
+//1799 비숍 https://www.acmicpc.net/problem/1799
+//2570 비숍2 https://www.acmicpc.net/problem/1799
+//3683 고양이와 개 https://www.acmicpc.net/problem/3683
 
 
 #include <vector>
