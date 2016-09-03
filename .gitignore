@@ -245,5 +245,5 @@ ModelManifest.xml
 .fake/
 
 # intput output testcase
-.input
-.output
+*.input
+*.output
