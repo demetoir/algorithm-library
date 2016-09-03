@@ -10,9 +10,6 @@
     <Filter Include="트리">
       <UniqueIdentifier>{500c03e3-6311-4726-a5cb-9b81c12be3a8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="문자열">
-      <UniqueIdentifier>{2524e504-d8ce-49c9-8c41-cf229792b0ee}</UniqueIdentifier>
-    </Filter>
     <Filter Include="라이브러리 사용법">
       <UniqueIdentifier>{7b60266c-aa47-4ef7-9886-b4f72814e028}</UniqueIdentifier>
     </Filter>
@@ -24,6 +21,21 @@
     </Filter>
     <Filter Include="그리디">
       <UniqueIdentifier>{1b8ff98e-0d85-4d9e-95be-ad311a4ab55b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="문자열">
+      <UniqueIdentifier>{2524e504-d8ce-49c9-8c41-cf229792b0ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="분할 정복">
+      <UniqueIdentifier>{bf2a10e0-e2ba-466e-9f3a-be8f69e2e8b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="이분 탐색">
+      <UniqueIdentifier>{f6443402-099f-486e-aabe-9b1208d996a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="계산 기하">
+      <UniqueIdentifier>{c677e9bb-5da6-4373-88ea-2927f8cc47ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="완전 탐색">
+      <UniqueIdentifier>{d08d6114-b97e-4dbf-9892-ffbbe4ef4b0b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -126,5 +138,44 @@
     <ClCompile Include="topology sort.cpp">
       <Filter>그래프</Filter>
     </ClCompile>
+    <ClCompile Include="진법 변환.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="피보나치 수.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="카탈란 수.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="오일러 피 함수.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="프림 스패닝 트리.cpp">
+      <Filter>그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="크루스칼 스패닝 트리.cpp">
+      <Filter>그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="플로이드 와샬 알고리즘.cpp">
+      <Filter>그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="lca.cpp">
+      <Filter>트리</Filter>
+    </ClCompile>
+    <ClCompile Include="ccw.cpp">
+      <Filter>계산 기하</Filter>
+    </ClCompile>
+    <ClCompile Include="Graham Scan.cpp">
+      <Filter>계산 기하</Filter>
+    </ClCompile>
+    <ClCompile Include="선분의 교차를 판별.cpp">
+      <Filter>계산 기하</Filter>
+    </ClCompile>
+    <ClCompile Include="Rotating Calipers.cpp">
+      <Filter>계산 기하</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="깃허브 주소.txt" />
   </ItemGroup>
 </Project>

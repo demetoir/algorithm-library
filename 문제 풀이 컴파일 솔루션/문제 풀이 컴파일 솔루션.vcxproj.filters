@@ -23,7 +23,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Text.txt">
+    <Text Include="output.txt">
+      <Filter>소스 파일</Filter>
+    </Text>
+    <Text Include="input.txt">
       <Filter>소스 파일</Filter>
     </Text>
   </ItemGroup>

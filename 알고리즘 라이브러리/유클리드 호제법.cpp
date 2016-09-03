@@ -4,6 +4,8 @@
 //
 //시간 복잡도 : O( log2(min(a, b)) )
 //
+//선조건
+//a<=b 이어야함 
 //참고자료
 //https://en.wikipedia.org/wiki/Euclidean_algorithm
 //https://opentutorials.org/course/1685/9533
@@ -19,8 +21,9 @@ int gcd(int a, int b) {
 }
 
 int main() {
-	int a = 16;
-	int b = 28;
+
+	int a = 28;
+	int b = 16;
 
 	//최대 공약수
 	int gcd_val = gcd(a, b);

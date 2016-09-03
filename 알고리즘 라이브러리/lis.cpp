@@ -1,8 +1,8 @@
 //lis (longest increasing sequence, 최장 증가수열)
 //
 //시간 복잡도 
-//2차원 dp : O(n^2)
-//lower_bound : O(nlog(n))
+//쉬운 dp : O(n^2)
+//lower_bound 이용 : O(nlog(n))
 //
 //참고자료
 //https://en.wikipedia.org/wiki/Longest_increasing_subsequence
@@ -25,13 +25,48 @@
 #include <algorithm>
 using namespace std;
 
+#define MAX_N 1000
 
-//2차원 dp
-
+int seq1[1000];
+//쉬운 dp
+#define MAX_N 1001
+int n;
+int seq[MAX_N];
+int dp[MAX_N];
+int main() {
+	dp[0] = 1;
+	for (int i = 1; i < n; i++) {
+		dp[i] = 1;
+		for (int j = 0; j < i; j++) {
+			if (seq[j] < seq[i] && dp[i] < dp[j] + 1)
+				dp[i] = dp[j] + 1;
+		}
+	}
+	int ans = 0;
+	for (int i = 0; i < n; i++) {
+		ans = max(ans, dp[i]);
+	}
+	return 0;
+}
 
 //lower_bound 이용시
+int seq2[100000];
+int dp2[100000];
+int n = 100000;
+int main() {
 
-
-
-
-
+	dp[0] = seq[0];
+	int size = 1;
+	for (int i = 1; i < n; i++) {
+		if (dp[size - 1] < seq[i]) {
+			dp[size] = seq[i];
+			size++;
+		}
+		else {
+			dp[lower_bound(dp, dp + size, seq[i]) - dp] = seq[i];
+		}
+	}
+	int ans = size;
+	printf("%d\n", ans);
+	return 0;
+}
