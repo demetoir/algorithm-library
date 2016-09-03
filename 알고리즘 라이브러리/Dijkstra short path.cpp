@@ -1,7 +1,17 @@
 //dijkstra short path 다잌스트라 최단경로 알고리즘
-//시간 복잡도 O( (|V| + |E|)log(|V|) )
+//
+//시간 복잡도 
+//큐 사용시 O(V^2)
+//우선순위 큐 사용시 O( (|V| + |E|)log(|V|) )
+//
 //선행 조건 :
 //그래프 상에서 음수 사이클이 없어야한다
+//
+//참고자료
+//https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+//http://koosaga.myungwoo.kr/entry/Floyd-Warshall-Bellman-Ford-Dijkstra-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
+//http://makefortune2.tistory.com/26
+//
 //
 //문제
 //1753 최단경로 https://www.acmicpc.net/problem/1753

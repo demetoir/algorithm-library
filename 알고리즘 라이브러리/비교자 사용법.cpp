@@ -1,7 +1,9 @@
 //비교자 사용법
-//콜백 함수로 처리 한다
-//콜백 함수의 반환형은 bool 이어야함
 //
+//주의사항
+//콜백 함수의 반환형은 bool 이어야함
+//콜백 함수의 인자는 2개이며 인자의 서로 같은 타입이어야한다
+
 #include <vector>
 #include <functional>
 #include <utility>

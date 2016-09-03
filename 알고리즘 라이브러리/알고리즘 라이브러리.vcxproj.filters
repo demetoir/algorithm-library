@@ -96,14 +96,17 @@
     <ClCompile Include="lowerbound 사용법.cpp">
       <Filter>라이브러리 사용법</Filter>
     </ClCompile>
-    <ClCompile Include="short path first algorithm.cpp">
-      <Filter>그래프</Filter>
-    </ClCompile>
     <ClCompile Include="유클리드 호제법.cpp">
       <Filter>정수론</Filter>
     </ClCompile>
     <ClCompile Include="lis.cpp">
       <Filter>DP</Filter>
+    </ClCompile>
+    <ClCompile Include="lcs.cpp">
+      <Filter>DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Shortest path first algorithm .cpp">
+      <Filter>그래프</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

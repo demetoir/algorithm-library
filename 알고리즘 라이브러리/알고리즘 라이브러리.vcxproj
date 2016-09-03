@@ -150,6 +150,7 @@
     <ClCompile Include="Dijkstra short path.cpp" />
     <ClCompile Include="index tree.cpp" />
     <ClCompile Include="kmp string matching.cpp" />
+    <ClCompile Include="lcs.cpp" />
     <ClCompile Include="lis.cpp" />
     <ClCompile Include="lowerbound 사용법.cpp" />
     <ClCompile Include="map 사용법.cpp" />
@@ -160,7 +161,7 @@
     <ClCompile Include="queue 사용법.cpp" />
     <ClCompile Include="segment tree lazy propagation.cpp" />
     <ClCompile Include="segment tree.cpp" />
-    <ClCompile Include="short path first algorithm.cpp" />
+    <ClCompile Include="Shortest path first algorithm .cpp" />
     <ClCompile Include="sort 사용법.cpp" />
     <ClCompile Include="stack 사용법.cpp" />
     <ClCompile Include="suffix array.cpp" />

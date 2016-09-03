@@ -28,23 +28,34 @@ typedef long long LL;
 #define all(a) (a).begin(),(a).end()
 
 int main() {
+	//#define si(a) scanf("%d",&(a))
 	int int_val;
 	si(int_val);
 	//scanf("%d",&(int_val))
 
+	//#define slf(a) scanf("%lf",&(a))
 	double double_val;
 	slf(double_val);
 	//scanf("%lf",&(double_val))
 
+	//#define sll(a) scanf("%lld",&(a))
 	LL LL_val;
 	sll(LL_val);
 	//scanf("%lld",&(LL_val))
+
+
+	//#define sc(a) scanf("%c",&(a))
 
 	char char_val;
 	sc(char_val);
 	//scanf("%c",&(char_val))
 
+	//define ss(a) scanf("%s",a)
 	char str[1000];
 	ss(str);
 	//scanf("%s",(str))
+
+	//#define all(a) (a).begin(),(a).end()
+	vector<int>vi;
+	sort(all(vi));
 }

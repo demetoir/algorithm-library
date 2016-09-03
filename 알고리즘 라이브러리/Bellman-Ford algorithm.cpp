@@ -3,6 +3,11 @@
 //
 //음수 사이클 판별 가능함
 //
+//참고자료
+//https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm
+//http://koosaga.myungwoo.kr/entry/Floyd-Warshall-Bellman-Ford-Dijkstra-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98
+//http://blog.naver.com/PostView.nhn?blogId=infoefficien&logNo=220100077659&parentCategoryNo=&categoryNo=65&viewDate=&isShowPopularPosts=true&from=search
+//
 //문제
 //11657 타임머신 https://www.acmicpc.net/problem/11657
 //
