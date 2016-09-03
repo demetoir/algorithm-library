@@ -20,6 +20,7 @@
 //2532 먹이사슬 https://www.acmicpc.net/problem/2532
 //1937 욕심쟁이 판다 https://www.acmicpc.net/problem/1937
 //
+//검증 완료
 
 #include <vector>
 #include <algorithm>

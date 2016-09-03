@@ -1,4 +1,4 @@
-// Kruskal’s algorithm (크루스칼 알고리즘)
+// maxflow (최대유량)
 //
 //시간 복잡도
 //

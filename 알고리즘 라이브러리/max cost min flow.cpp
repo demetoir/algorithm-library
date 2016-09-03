@@ -1,4 +1,4 @@
-// Kruskal’s algorithm (크루스칼 알고리즘)
+// min cost max flow (mcmf)
 //
 //시간 복잡도
 //
