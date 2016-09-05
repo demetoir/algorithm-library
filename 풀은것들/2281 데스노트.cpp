@@ -37,23 +37,23 @@ int main() {
 	si(n);
 	si(m);
 	for (int i = 0; i < n; i++) {
-		si(name[i+1]);
+		si(name[i + 1]);
 	}
 
 	for (int i = 1; i <= n; i++) {
 		dp[i] = INF;
 		int sum = name[i];
-		for (int j = i - 1; j >=0; j--) {
+		for (int j = i - 1; j >= 0; j--) {
 			if (sum > m)break;
-			dp[i] = min(dp[i], (m-sum)*(m-sum) + dp[j]);
-			sum += name[j]+1;
+			dp[i] = min(dp[i], (m - sum)*(m - sum) + dp[j]);
+			sum += name[j] + 1;
 		}
 		//printf("##%d %d\n", i, dp[i]);
 	}
 
 	int ans = dp[n];
 	int sum = name[n];
-	for (int i = n-1; i > 0; i--) {
+	for (int i = n - 1; i > 0; i--) {
 		if (sum > m) break;
 		ans = min(ans, dp[i]);
 		sum += name[i] + 1;

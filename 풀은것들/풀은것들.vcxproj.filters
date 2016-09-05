@@ -21,5 +21,8 @@
     <ClCompile Include="11502 세 개의 소수 문제.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2281 데스노트.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -149,6 +149,7 @@
     <ClCompile Include="ccw.cpp" />
     <ClCompile Include="dfs.cpp" />
     <ClCompile Include="Dijkstra short path.cpp" />
+    <ClCompile Include="dp.cpp" />
     <ClCompile Include="Graham Scan.cpp" />
     <ClCompile Include="hash_map 사용법.cpp" />
     <ClCompile Include="index tree.cpp" />
