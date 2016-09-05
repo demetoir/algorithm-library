@@ -22,22 +22,48 @@ using namespace std;
 #define AND &&
 #define OR ||
 #define FOR(i,s,e) for (int i = s; i<e; i++)
-#define all(a) (a).begin(),(a).end()
 //////////////////////////////////////////////////////////////////////////////////
 
-//9010 Mobius strip
+//9011 ¼ø¼­ 
 #define MAX_N 1000
 int n;
 int num[MAX_N];
 int ans[MAX_N];
 int check[MAX_N];
 int main() {
-	int test = 1;
-	//si(test);
+	int test = 0;
+	si(test);
 	for (; test > 0; test--) {
 		si(n);
 
-		int ans = 0;
+		for (int i = 0; i < n; i++) si(num[i]);
+
+		int flag = false;
+		memset(check, 0, sizeof(check));
+		memset(ans, 0, sizeof(ans));
+		for (int i = n - 1; i >= 0; i--) {
+			int count = 0;
+			for (int j = 1; j <= n; j++) {
+				if (check[j] == 1)continue;
+				count += 1;
+				if (count == num[i] + 1) {
+					ans[i] = j;
+					check[j] = 1;
+					break;
+				}
+			}
+			if (ans[i] == 0) {
+				flag = true;
+				break;
+			}
+		}
+		if (flag)
+			printf("IMPOSSIBLE\n");
+		else {
+			for (int i = 0; i<n; i++)
+				printf("%d ", ans[i]);
+			printf("\n");
+		}
 	}
 	return 0;
 }
