@@ -1,78 +1,165 @@
-//밑에 매크로 사용법 있음
-#include <stdio.h>
 #include <iostream>
+#include <stdio.h>
 #include <vector>
 #include <queue>
 #include <stack>
-#include <map>
+#include <math.h>
 #include <algorithm>
-#include <functional>
-#include <limits>
 #include <string>
 #include <string.h>
-#include <math.h>
-#include <stdlib.h>
-
+#include <map>
 using namespace std;
-typedef long long LL;
 
-#define INF 2e9
-#define LLINF ( (LL)1e18 )
-
+#define LL long long
 #define si(a) scanf("%d",&(a))
-#define slf(a) scanf("%lf",&(a))
-#define sll(a) scanf("%lld",&(a))
+#define sf(a) scanf("%f",&(a))
 #define sc(a) scanf("%c",&(a))
+#define sLL(a) scanf("%lld",&(a))
 #define ss(a) scanf("%s",a)
 #define pii pair<int,int>
-#define all(a) (a).begin(),(a).end()
-////////////////////////////////////////////////////////////////////////
+#define INF 2e9
+#define LLINF ( (((LL)1) <<63)  -1)
+#define AND &&
+#define OR ||
+#define FOR(i,s,e) for (int i = s; i<e; i++)
+//////////////////////////////////////////////////////////////////////////////////
 
-#define MAX_V 20001
-int v,e,k;
+int n, m;
+struct Maxflow {
+	int size;
+	struct Edge {
+		int next;
+		int flow;
+		int rev_index;
+		Edge(int n, int f, int r) {
+			next = n;
+			flow = f;
+			rev_index = r;
+		}
+	};
+	vector< vector<Edge> > G;
 
-vector<pii>G[MAX_V];
-vector<int>dist;
-void spf(int start) {
-	queue<int>q;
-	q.push(start);
-	dist = vector<int>(MAX_V, INF);
-	dist[start] = 0;
-	vector<bool> isinqueue(MAX_V);
-	isinqueue[start] = true;
-	while (!q.empty()) {
-		int cur = q.front();
-		q.pop();
-		isinqueue[cur] = false;
+	Maxflow(int n) {
+		size = n;
+		G.assign(size, vector<Edge>());
+	}
 
-		for (int i = 0; i < G[cur].size(); i++) {
-			int next = G[cur][i].first;
-			int cost = G[cur][i].second;
+	void make_edge(int cur, int next, int flow, int rev_flow) {
+		Edge A(next, flow, G[next].size());
+		Edge B(cur, rev_flow, G[cur].size());
+		G[cur].push_back(A);
+		G[next].push_back(B);
+	}
 
-			if (dist[next] > dist[cur] + cost) {
-				dist[next] = dist[cur] + cost;
-				if (isinqueue[next] == false) {
-					isinqueue[next] = true;
-					q.push(next);
+	int bfs(int s, int t) {
+		int flow = INF;
+		vector <pii> parent(size, pii(-1, -1));
+		vector <bool> check(size, false);
+		queue<int>q;
+		q.push(s);
+		check[s] = true;
+		while (!q.empty()) {
+			int cur = q.front(); q.pop();
+
+			for (int i = 0; i < G[cur].size(); i++) {
+				Edge &e = G[cur][i];
+
+				if (e.flow > 0 && check[e.next] == false) {
+					check[e.next] = true;
+					q.push(e.next);
+					parent[e.next].first = cur;
+					parent[e.next].second = i;
 				}
 			}
+		}
+
+		if (parent[t].first == -1) return 0;
+
+		for (int p = t; parent[p].first != -1; p = parent[p].first) {
+			Edge &e = G[parent[p].first][parent[p].second];
+			flow = min(flow, e.flow);
+		}
+
+		for (int p = t; parent[p].first != -1; p = parent[p].first) {
+			Edge &e = G[parent[p].first][parent[p].second];
+			e.flow -= flow;
+			G[e.next][e.rev_index].flow += flow;
+		}
+		return flow;
+	}
+
+	int getmaxflow(int s, int t) {
+		int maxflow = 0;
+		int flow = 0;
+		while (flow = bfs(s, t))
+			maxflow += flow;
+		return maxflow;
+	}
+
+};
+
+char str[100];
+#define MAX_N 51
+int board[MAX_N][MAX_N];
+int d[MAX_N][MAX_N];
+int r[MAX_N][MAX_N];
+int s, t;
+Maxflow mf(5010);
+void makeG() {
+	int count = 1;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			if (board[i][j] == 0 || r[i][j] != 0) continue;
+
+			for (int k = 0; k < 51; k++) {
+				if (j + k >= m)break;
+				if (board[i][j + k] == 0) break;
+				r[i][j + k] = count;
+			}
+			mf.make_edge(s, count, 1, 0);
+			count += 1;
+		}
+	}
+
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			if (board[i][j] == 0 || d[i][j] != 0) continue;
+
+			for (int k = 0; k < 51; k++) {
+				if (i + k >= n)break;
+				if (board[i + k][j] == 0) break;
+				d[i + k][j] = count;
+			}
+			mf.make_edge(count, t, 1, 0);
+			count += 1;
+		}
+	}
+
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			if (board[i][j] == 0) continue;
+			mf.make_edge(r[i][j], d[i][j], 1, 0);
 		}
 	}
 }
 int main() {
-	si(v);si(e);
-	si(k);
-	for (int i = 0,a,b,c; i < e; i++) {
-		si(a);si(b);si(c);
-		G[a].push_back(pii(b, c));
+	cin >> n >> m;
+	int val;
+	s = 0;
+	t = 5001;
+	for (int i = 0; i < n; i++) {
+		ss(str);
+		for (int j = 0; j < m; j++) {
+			if (str[j] == '*')
+				board[i][j] = 1;
+			else board[i][j] = 0;
+		}
 	}
+	makeG();
 
-	spf(k);
-	for (int i = 1; i <= v; i++) {
-		if (dist[i] == INF)
-			printf("INF\n");
-		else
-			printf("%d\n", dist[i]);
-	}
+	int ans = mf.getmaxflow(s, t);
+	printf("%d\n", ans);
 	return 0;
 }

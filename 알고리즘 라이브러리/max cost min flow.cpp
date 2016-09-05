@@ -1,4 +1,4 @@
-// min cost max flow (mcmf)
+//min cost max flow (mcmf)
 //
 //시간 복잡도
 //

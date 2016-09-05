@@ -175,6 +175,7 @@
     <ClCompile Include="trie.cpp" />
     <ClCompile Include="union find.cpp" />
     <ClCompile Include="vector 사용법.cpp" />
+    <ClCompile Include="결정문제 이분탐색.cpp" />
     <ClCompile Include="라이브러리 및 매크로.cpp" />
     <ClCompile Include="모듈러 연산.cpp" />
     <ClCompile Include="비교자 사용법.cpp" />
@@ -186,6 +187,7 @@
     <ClCompile Include="이분탐색.cpp" />
     <ClCompile Include="이항계수.cpp" />
     <ClCompile Include="진법 변환.cpp" />
+    <ClCompile Include="최소 정점 덮개.cpp" />
     <ClCompile Include="카탈란 수.cpp" />
     <ClCompile Include="Kruskal’s algorithm.cpp" />
     <ClCompile Include="prim algorithm.cpp" />

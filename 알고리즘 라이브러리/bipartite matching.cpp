@@ -15,11 +15,7 @@
 //1671 상어의 저녘식사 https://www.acmicpc.net/problem/1671
 //11377 열혈강호 3 https://www.acmicpc.net/problem/11377
 //11378 열혈강호 4 https://www.acmicpc.net/problem/11378
-//2414 게시판 구멍 막기 https://www.acmicpc.net/problem/2414
 //1799 비숍 https://www.acmicpc.net/problem/1799
-//2570 비숍2 https://www.acmicpc.net/problem/1799
-//3683 고양이와 개 https://www.acmicpc.net/problem/3683
-
 
 #include <vector>
 #include <string.h>

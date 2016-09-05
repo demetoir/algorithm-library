@@ -186,6 +186,12 @@
     <ClCompile Include="prim algorithm.cpp">
       <Filter>그래프</Filter>
     </ClCompile>
+    <ClCompile Include="결정문제 이분탐색.cpp">
+      <Filter>이분 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="최소 정점 덮개.cpp">
+      <Filter>네트워크 플로우</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="깃허브 주소.txt" />
