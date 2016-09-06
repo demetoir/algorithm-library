@@ -1,34 +1,30 @@
-//kmp (Knuth-Morris-Pratt)
-//
-//문자열 매칭 알고리즘
-//한 패턴이 나타나는 모든 위치를 찾는다
-//
-//시간복잡도 O(N + H)
-//N -> 패턴길이, H-> 찾을 문자열 길이
-//
-//참고 자료
-//https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
-//http://codedoc.tistory.com/416
-//http://carstart.tistory.com/143
-//
-//문제
-//1786 찾기 https://www.acmicpc.net/problem/1786
-//1701 Cubeditor https://www.acmicpc.net/problem/1701
-//1305 광고 https://www.acmicpc.net/problem/1305
-//4354 문자열 제곱 https://www.acmicpc.net/problem/4354
-//
-//검증됨
-//
+#include <cstdio>
 #include <vector>
-using namespace std;
-#define MAX_N 100001
-#define MAX_H 100001
-int pie[MAX_N];//실패 함수
-int str[MAX_H];//찾을 짚더미
-int patern[MAX_N];// 찾을 패턴
-int h;//찾을 짚더비 길이
-int n;//찾을 패턴 길이 
+#include <queue>
+#include <stack>
+#include <math.h>
+#include <algorithm>
+#include <string>
+#include <string.h>
+#include <map>
 
+using namespace std;
+
+#define LL long long
+#define si(a) scanf("%d",&(a))
+#define sf(a) scanf("%f",&(a))
+#define sc(a) scanf("%c",&(a))
+#define sLL(a) scanf("%lld",&(a))
+#define ss(a) scanf("%s",a)
+#define pii pair<int,int>
+#define INF 2e9
+#define LLINF ( (((LL)1) <<63)  -1)
+#define AND &&
+#define OR ||
+#define FOR(i,s,e) for (int i = s; i<e; i++)
+#define all(a) (a).begin(),(a).end()
+//////////////////////////////////////////////////////////////////////////////////
+//1786 찾기
 #define MAX_N 1000001
 #define MAX_H 1000001
 int pie[MAX_N];//실패 함수
@@ -78,4 +74,20 @@ void kmp() {
 	}
 
 	return;
+}
+
+int main() {
+	gets_s(str);
+	gets_s(patern);
+	n = strlen(patern);
+	h = strlen(str);
+
+	kmp();
+	printf("%d\n", ans.size());
+	for (int i = 0; i < ans.size(); i++) {
+		printf("%d\n", ans[i] + 1);
+	}
+
+
+	return 0;
 }

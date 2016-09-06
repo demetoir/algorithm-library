@@ -27,5 +27,14 @@
     <ClCompile Include="9011 순서 .cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10258 스위치 배열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1708 볼록 껍질.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1786 찾기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
