@@ -18,7 +18,7 @@ int x[3];
 int y[3];
 int ccw(int x[3],int y[3]) {
 	int ret = 0;
-	ret = x[0] * y[1] + x[1] * y[2] + x[2] * y[0] - (x[0] * y[2] + x[1] * y[0] + x[2] * y[1]);
+	ret = (x[0] * y[1] + x[1] * y[2] + x[2] * y[0]) - (x[0] * y[2] + x[1] * y[0] + x[2] * y[1]);
 
 	if (ret < 0) ret = -1;
 	if (ret > 0) ret = 1;
@@ -34,5 +34,5 @@ struct P {
 	int x, y;
 };
 int ccw(P p1, P p2, P p3) {
-	return (p2.x - p1.x)*(p3.y - p1.y) - (p2.y - p1.y)*(p3.x - p1.x);
+	return (p1.x*p2.y + p2.x*p3.y + p3.x *p1.y) - (p1.x*p3.y + p2.x *p1.y + p3.x * p2.y);
 }

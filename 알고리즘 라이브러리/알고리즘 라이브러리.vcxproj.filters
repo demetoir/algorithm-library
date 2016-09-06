@@ -28,14 +28,14 @@
     <Filter Include="분할 정복">
       <UniqueIdentifier>{bf2a10e0-e2ba-466e-9f3a-be8f69e2e8b3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="이분 탐색">
-      <UniqueIdentifier>{f6443402-099f-486e-aabe-9b1208d996a7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="계산 기하">
       <UniqueIdentifier>{c677e9bb-5da6-4373-88ea-2927f8cc47ad}</UniqueIdentifier>
     </Filter>
     <Filter Include="완전 탐색">
       <UniqueIdentifier>{d08d6114-b97e-4dbf-9892-ffbbe4ef4b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="이분 탐색">
+      <UniqueIdentifier>{f6443402-099f-486e-aabe-9b1208d996a7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -194,6 +194,9 @@
     </ClCompile>
     <ClCompile Include="dp.cpp">
       <Filter>DP</Filter>
+    </ClCompile>
+    <ClCompile Include="벡터 클래스.cpp">
+      <Filter>계산 기하</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

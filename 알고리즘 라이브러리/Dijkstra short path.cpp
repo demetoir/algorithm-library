@@ -154,6 +154,7 @@ void dijkstra_find_path(int start) {
 		}
 	}
 }
+
 void print_path(int end) {
 	if (dist[end] == INF) {
 		printf("path not exist\n");

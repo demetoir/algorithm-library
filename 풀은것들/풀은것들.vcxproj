@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="10258 스위치 배열.cpp" />
     <ClCompile Include="11502 세 개의 소수 문제.cpp" />
     <ClCompile Include="2281 데스노트.cpp" />
     <ClCompile Include="3079 입국 심사.cpp" />
