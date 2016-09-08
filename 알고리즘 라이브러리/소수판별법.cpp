@@ -58,9 +58,29 @@ void make_seive_with_factorize(int size) {
 }
 
 void integer_factorization(int n, vector<int> &factor) {
-	while (n > 1) {
+	while (seive[n] != 1) {
 		factor.push_back(seive[n]);
 		n = n / seive[n];
 	}
+	factor.push_back(n);
 }
-
+//최적화 되어진 체 ;영수가 씀
+int dp[1234], p;
+int main() {
+	int n, a, b;
+	scanf("%d", &n);
+	while (n--) {
+		scanf("%d", &a);
+		dp[a]++;
+	}
+	for (int i = 2; i < 1000; i++) {
+		b = 1;
+		for (int j = 2; j <= sqrt(i); j++)
+			if (i % j == 0) {
+				b = 0; break;
+			}
+		if (b) p += dp[i];
+	}
+	printf("%d", p);
+	return 0;
+}

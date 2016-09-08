@@ -1,93 +1,59 @@
-#include <cstdio>
+#include <stdio.h>
 #include <vector>
-#include <queue>
-#include <stack>
-#include <math.h>
+#include <set>
 #include <algorithm>
+#include <queue>
+#include <math.h>
+#include <iostream>
+#include <stack>
 #include <string>
 #include <string.h>
-#include <map>
-
 using namespace std;
 
 #define LL long long
+#define MP pair < int,int>
 #define si(a) scanf("%d",&(a))
-#define sf(a) scanf("%f",&(a))
-#define sc(a) scanf("%c",&(a))
 #define sLL(a) scanf("%lld",&(a))
-#define ss(a) scanf("%s",a)
-#define pii pair<int,int>
-#define INF 2e9
-#define LLINF ( (((LL)1) <<63)  -1)
-#define AND &&
-#define OR ||
-#define FOR(i,s,e) for (int i = s; i<e; i++)
-#define all(a) (a).begin(),(a).end()
-//////////////////////////////////////////////////////////////////////////////////
-//1786 찾기
-#define MAX_N 1000001
-#define MAX_H 1000001
-int pie[MAX_N];//실패 함수
-char str[MAX_H];//찾을 짚더미
-char patern[MAX_N];// 찾을 패턴
-int h;//찾을 짚더비 길이
-int n;//찾을 패턴 길이 
-vector<int>ans;
-void make_Pie() {
-	//start =1 로 시작함  
-	int start = 1, matched = 0;
-	while (start + matched < n) {
-		if (patern[start + matched] == patern[matched]) {
-			matched += 1;
-			pie[start + matched - 1] = matched;
-		}
-		else {
-			if (matched == 0)start += 1;
-			else {
-				start += matched - pie[matched - 1];
-				matched = pie[matched - 1];
-			}
-		}
-	}
-}
+#define INF 1234567890
+#define INFLL 12345678912345678
+#define MAX_N 50000
 
-void kmp() {
-	make_Pie();
-	int matched_count = 0;
-	int start = 0, matched = 0;
-	while (start <= h - n) {
-		//매칭 되었다
-		if (str[start + matched] == patern[matched]
-			&& matched < n) {
-			matched += 1;
-			if (matched == n)
-				ans.push_back(start);
-		}
-		//안 됨...
-		else {
-			if (matched == 0) start++;
-			else {
-				start += matched - pie[matched-1];
-				matched = pie[matched - 1];
-			}
-		}
+LL dp[100][100];
+LL n, l, k;
+void find(LL curlen, LL count,LL val) {
+	if (curlen == 0)return;
+	LL sum = 0;
+	//앞에 0이 들어가는 갯수
+	for (int i = 0; i <= count; i++) {
+		sum += dp[curlen-1][i];
 	}
 
+	if (val <= sum ) {
+		printf("0");
+		find(curlen - 1, count, val);
+	}
+	else {
+		printf("1");
+		find(curlen - 1, count-1, val - sum);
+	}
 	return ;
 }
-
 int main() {
-	gets_s(str);
-	gets_s(patern);
-	n = strlen(patern);
-	h = strlen(str);
-	
-	kmp();
-	printf("%d\n", ans.size());
-	for (int i = 0; i < ans.size(); i++) {
-		printf("%d\n", ans[i]+1);
+	sLL(n);
+	sLL(l);
+	sLL(k);
+
+	dp[0][0] = 1;
+	for (int i = 1; i < 100; i++) {
+		dp[i][0] = 1;
+		for (int j = 1; j <= i; j++)
+			dp[i][j] = dp[i - 1][j-1] + dp[i - 1][j];
 	}
+	
 
-
+	find(n,l,k);
+	printf("\n");
 	return 0;
 }
+
+

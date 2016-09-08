@@ -13,6 +13,9 @@
 //2042 구간 합 구하기 https://www.acmicpc.net/problem/2042
 //10868 최소값 https://www.acmicpc.net/problem/10868
 //2357 최소값과 최대값 https://www.acmicpc.net/problem/2357
+//https://www.acmicpc.net/problem/1275
+//1377 세그먼트 트리
+
 
 #include <vector>
 #include <math.h>

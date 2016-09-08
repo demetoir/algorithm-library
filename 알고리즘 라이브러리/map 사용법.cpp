@@ -31,8 +31,8 @@ int main() {
 	//mii.erase();
 	
 	//Á¢±Ù
-
-
+	mii[3];
+	//mii[3] = 10
 	
 
 

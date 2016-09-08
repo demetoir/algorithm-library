@@ -198,6 +198,30 @@
     <ClCompile Include="벡터 클래스.cpp">
       <Filter>계산 기하</Filter>
     </ClCompile>
+    <ClCompile Include="배정문제.cpp">
+      <Filter>네트워크 플로우</Filter>
+    </ClCompile>
+    <ClCompile Include="count 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="find 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="fill 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="revese 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="rotate 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="swap 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="unique 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="깃허브 주소.txt" />

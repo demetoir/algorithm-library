@@ -24,7 +24,7 @@ int main() {
 	(a / b) % mod == (a%mod / b%mod) % mod;
 	//false
 
-	(a / b) % mod == (a%mod*(1 / b) % mod) % mod;;
+	(a / b) % mod == (a%mod*(1 / b) % mod) % mod;
 	//true
 	//moduler inverse
 }

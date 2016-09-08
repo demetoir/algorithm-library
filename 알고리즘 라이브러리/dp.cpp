@@ -1,3 +1,10 @@
+
+// https://www.acmicpc.net/problem/2616
+//11060 점프 점프 https://www.acmicpc.net/problem/11060
+//5557 1학년 https://www.acmicpc.net/problem/5557
+//2281 데스노트 https://www.acmicpc.net/problem/2281
+//2248 이진수 찾기 https://www.acmicpc.net/problem/2248
+
 //DP 
 //
 //점화식 만들기
@@ -32,7 +39,7 @@
 //1344 축구 https://www.acmicpc.net/problem/1344
 //1648 격자판 채우기 https://www.acmicpc.net/problem/1648
 //1727 커플 만들기 https://www.acmicpc.net/problem/1727
-//1234 크리스마스 트리https://www.acmicpc.net/problem/1234
+//1234 크리스마스 트리 https://www.acmicpc.net/problem/1234
 //2300 기지국 https://www.acmicpc.net/problem/2300
 //1023 괄호 문자열 https://www.acmicpc.net/problem/1023
 //2315 가로등 끄기 https://www.acmicpc.net/problem/2315
