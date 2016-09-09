@@ -37,6 +37,9 @@
     <Filter Include="이분 탐색">
       <UniqueIdentifier>{f6443402-099f-486e-aabe-9b1208d996a7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="라이브러리 사용법\algorithm 사용법">
+      <UniqueIdentifier>{958ca919-9423-4a38-b9a2-f011efff2225}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dfs.cpp">
@@ -90,9 +93,6 @@
     <ClCompile Include="priority_queue 사용법.cpp">
       <Filter>라이브러리 사용법</Filter>
     </ClCompile>
-    <ClCompile Include="sort 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
     <ClCompile Include="pair 사용법.cpp">
       <Filter>라이브러리 사용법</Filter>
     </ClCompile>
@@ -106,9 +106,6 @@
       <Filter>라이브러리 사용법</Filter>
     </ClCompile>
     <ClCompile Include="map 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="lowerbound 사용법.cpp">
       <Filter>라이브러리 사용법</Filter>
     </ClCompile>
     <ClCompile Include="유클리드 호제법.cpp">
@@ -202,25 +199,43 @@
       <Filter>네트워크 플로우</Filter>
     </ClCompile>
     <ClCompile Include="count 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="find 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
+      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
     </ClCompile>
     <ClCompile Include="fill 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
+      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="find 사용법.cpp">
+      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="lowerbound 사용법.cpp">
+      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
     </ClCompile>
     <ClCompile Include="revese 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
+      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
     </ClCompile>
     <ClCompile Include="rotate 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
+      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="sort 사용법.cpp">
+      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
     </ClCompile>
     <ClCompile Include="swap 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
+      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
     </ClCompile>
     <ClCompile Include="unique 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
+      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="binary_search 사용법.cpp">
+      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="dp 최적화 기법.cpp">
+      <Filter>DP</Filter>
+    </ClCompile>
+    <ClCompile Include="job 스케줄링.cpp">
+      <Filter>그리디</Filter>
+    </ClCompile>
+    <ClCompile Include="트리의 지름.cpp">
+      <Filter>트리</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

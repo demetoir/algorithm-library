@@ -32,5 +32,6 @@
     <Text Include="output.output">
       <Filter>소스 파일</Filter>
     </Text>
+    <Text Include="내가 풀은 문제 분류.txt" />
   </ItemGroup>
 </Project>

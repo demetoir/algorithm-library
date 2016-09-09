@@ -145,11 +145,13 @@
     <ClCompile Include="Aho–Corasick string matching.cpp" />
     <ClCompile Include="Bellman-Ford algorithm.cpp" />
     <ClCompile Include="bfs.cpp" />
+    <ClCompile Include="binary_search 사용법.cpp" />
     <ClCompile Include="bipartite matching.cpp" />
     <ClCompile Include="ccw.cpp" />
     <ClCompile Include="count 사용법.cpp" />
     <ClCompile Include="dfs.cpp" />
     <ClCompile Include="Dijkstra short path.cpp" />
+    <ClCompile Include="dp 최적화 기법.cpp" />
     <ClCompile Include="dp.cpp" />
     <ClCompile Include="fill 사용법.cpp" />
     <ClCompile Include="find 사용법.cpp" />
@@ -191,6 +193,7 @@
     <ClCompile Include="비교자 사용법.cpp" />
     <ClCompile Include="선분의 교차를 판별.cpp" />
     <ClCompile Include="소수판별법.cpp" />
+    <ClCompile Include="job 스케줄링.cpp" />
     <ClCompile Include="스털링수.cpp" />
     <ClCompile Include="오일러 피 함수.cpp" />
     <ClCompile Include="유클리드 호제법.cpp" />
@@ -201,6 +204,7 @@
     <ClCompile Include="카탈란 수.cpp" />
     <ClCompile Include="Kruskal’s algorithm.cpp" />
     <ClCompile Include="prim algorithm.cpp" />
+    <ClCompile Include="트리의 지름.cpp" />
     <ClCompile Include="플로이드 와샬 알고리즘.cpp" />
     <ClCompile Include="피보나치 수.cpp" />
   </ItemGroup>

@@ -6,8 +6,6 @@
 #include <algorithm>
 using namespace std;
 
-//rotate(begin,mid,end)
-//begin 부터 end 까지  mid 기준으로 왼쪽으로 회전한다
 int main() {
 	int x = 5, y = 87;
 	//x == 5, y==87

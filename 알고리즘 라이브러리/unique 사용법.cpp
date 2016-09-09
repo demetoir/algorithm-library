@@ -1,25 +1,25 @@
 //unique 사용법
 // 시간 복잡도 O(?)
 // 헤더 <algorithm>
-//begin 부터 end 까지 같은 값을 제거한다
+
 #include <vector>
 #include <algorithm>
 using namespace std;
 
-//rotate(begin,mid,end)
-//begin 부터 end 까지  mid 기준으로 왼쪽으로 회전한다
+//unique(begin,end)
+//begin 부터 end 까지 연속되는 중복된값을 제거한다
+//따라서 정렬된상태여야 모든원소에 대해 중복되지 않게 된다
 int main() {
-	int x = 5, y = 87;
-	//x == 5, y==87
-	swap(x, y);
-	//x == 87, y==5
+	vector<int> vi1({ 1,2,3,4,4,4,4,1,2,3,1,2 });
+	vector<int> vi2({ 1,2,3,4,4,4,4,1,2,3,1,2 });
 
-	vector<int>a({ 1,2,3 });
-	vector<int>b({ 5,6,7,8 });
+	vi1.erase(unique(vi1.begin(), vi1.end()), vi1.end());
+	//vi1 = {1,2,3,4,1,2,3,1,2}
 
-	//a = {1,2,3}, b = {5,6,7,8}
-	swap(a, b);
-	//a = {5,6,7,8}, b = {1,2,3} 
+	sort(vi2.begin(), vi2.end());
+	vi2.erase(unique(vi2.begin(), vi2.end()), vi2.end());
+	//vi1 = {1,2,3,4}
+
 
 	return 0;
 }
