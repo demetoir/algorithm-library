@@ -103,7 +103,12 @@ int grid_cost[MAX_N][MAX_M];//grid_cost[a][b] -> a,b 로 가는데 비용
 void dijkstra_gird(int start_x,int start_y) {
 	queue<pii> q;
 	q.push(pii(start_x,start_y));
-	memset(grid_dist, 0, sizeof(grid_dist));
+	for (int i = 0; i < MAX_N; i++) {
+		for (int j = 0; j < MAX_M; j++) {
+			grid_dist[i][j] = INF;
+		}
+	}
+	memset(grid_dist, INF, sizeof(grid_dist));
 	grid_dist[start_x][start_y] = 0;
 
 	while (!q.empty()) {
