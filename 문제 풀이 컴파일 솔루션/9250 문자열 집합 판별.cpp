@@ -1,31 +1,28 @@
-//aho-corasick
-//
-//
-//시간복잡도 O(N + P)
-//N : 찾으려고하는 문자열 길이
-//P : 패턴의 출현 횟수
-//
-//
-//참고 자료
-//
-//
-//문제
-//
-//
-//
-//
-//
-//
-//
-
-#include <string>
-#include <queue>
+//문자열 매칭 아호코라식 기본구현
+#include <stdio.h>
 #include <vector>
-#include <utility>
+#include <set>
+#include <algorithm>
+#include <queue>
+#include <math.h>
+#include <iostream>
+#include <stack>
+#include <string>
+#include <string.h>
 using namespace std;
-#define MAX_N 100001
 
-#define pii pair<int,int>
+#define LL long long
+#define pii pair < int,int>
+#define si(a) scanf("%d",&(a))
+#define ss(a) scanf("%s",(a))
+#define sLL(a) scanf("%lld",&(a))
+#define INF 1234567890
+#define LLINF 12345678912345678
+#define all(a) (a).begin(),(a).end()
+//////////////////////////////////////////////////////////////////////////////////////////
+
+int T, ans;
+int n, q;
 
 const int alphabet = 26;
 int tonum(char c) { return c - 'a'; }
@@ -118,3 +115,34 @@ int ahoCorasick(const string& s, Node* root) {
 	return 0;
 }
 
+char pattern[100000];
+
+
+int main() {
+	Node root;
+	si(n);
+	for (int i = 0; i < n; i++) {
+		memset(pattern, 0, sizeof(pattern));
+		ss(pattern);
+		root.insert(pattern, i + 1);
+	}
+
+	//실패함수생성
+	computeFailfunc(&root);
+
+	si(q);
+	char temp[100010];
+	for (int i = 0; i < q; i++) {
+		ss(temp);
+		string str(temp);
+
+		int ans = ahoCorasick(str, &root);
+		if (ans == 0)
+			printf("NO\n");
+		else
+			printf("YES\n");
+	}
+
+
+	return  0;
+}

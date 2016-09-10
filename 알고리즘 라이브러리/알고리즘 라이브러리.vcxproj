@@ -186,6 +186,7 @@
     <ClCompile Include="unique 사용법.cpp" />
     <ClCompile Include="vector 사용법.cpp" />
     <ClCompile Include="결정문제 이분탐색.cpp" />
+    <ClCompile Include="그래프 분류.cpp" />
     <ClCompile Include="라이브러리 및 매크로.cpp" />
     <ClCompile Include="모듈러 연산.cpp" />
     <ClCompile Include="배정문제.cpp" />

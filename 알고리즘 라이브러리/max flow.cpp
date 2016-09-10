@@ -78,7 +78,6 @@ int maxflow(int s,int t) {
 }
 
 //인접 리스트 버전
-
 struct Maxflow {
 	int size;
 	struct Edge {

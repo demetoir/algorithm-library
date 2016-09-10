@@ -22,14 +22,14 @@ using namespace std;
 
 const int alphabet = 26;
 int tonum(char c) { return c - 'A'; }
-struct TrieNode{
-	TrieNode* children[alphabet];
+struct NODE{
+	NODE* children[alphabet];
 
 	bool terminal;
-	TrieNode():terminal(false){
+	NODE():terminal(false){
 		memset(children, 0, sizeof(children));
 	}
-	~TrieNode() {
+	~NODE() {
 		for (int i = 0; i < alphabet; i++) {
 			if (children[i])
 				delete children[i];
@@ -41,12 +41,12 @@ struct TrieNode{
 		else {
 			int next = tonum(*key);
 			if (children[next] == NULL)
-				children[next] = new TrieNode();
+				children[next] = new NODE();
 			children[next]->insert(key + 1);
 		}
 	}
 
-	TrieNode* find(const char*key) {
+	NODE* find(const char*key) {
 		if (*key == 0) return this;
 		int next = tonum(*key);
 		if (children[next] == NULL)return NULL;

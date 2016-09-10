@@ -142,7 +142,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="temp.cpp" />
+    <ClCompile Include="10256 돌연변이.cpp" />
+    <ClCompile Include="9008 castle.cpp" />
     <ClCompile Include="소스.cpp" />
   </ItemGroup>
   <ItemGroup>

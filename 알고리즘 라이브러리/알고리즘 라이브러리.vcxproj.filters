@@ -40,6 +40,9 @@
     <Filter Include="라이브러리 사용법\algorithm 사용법">
       <UniqueIdentifier>{958ca919-9423-4a38-b9a2-f011efff2225}</UniqueIdentifier>
     </Filter>
+    <Filter Include="배열검색">
+      <UniqueIdentifier>{10e91532-a99b-45c6-b21a-fc2c482fb0df}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dfs.cpp">
@@ -236,6 +239,9 @@
     </ClCompile>
     <ClCompile Include="트리의 지름.cpp">
       <Filter>트리</Filter>
+    </ClCompile>
+    <ClCompile Include="그래프 분류.cpp">
+      <Filter>네트워크 플로우</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
