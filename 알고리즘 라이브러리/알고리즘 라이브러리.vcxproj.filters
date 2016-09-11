@@ -84,9 +84,6 @@
     <ClCompile Include="kmp string matching.cpp">
       <Filter>문자열</Filter>
     </ClCompile>
-    <ClCompile Include="suffix array.cpp">
-      <Filter>문자열</Filter>
-    </ClCompile>
     <ClCompile Include="라이브러리 및 매크로.cpp">
       <Filter>라이브러리 사용법</Filter>
     </ClCompile>
@@ -242,6 +239,9 @@
     </ClCompile>
     <ClCompile Include="그래프 분류.cpp">
       <Filter>네트워크 플로우</Filter>
+    </ClCompile>
+    <ClCompile Include="suffix array and LCP array.cpp">
+      <Filter>문자열</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

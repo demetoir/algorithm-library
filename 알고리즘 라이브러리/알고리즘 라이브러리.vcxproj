@@ -178,7 +178,7 @@
     <ClCompile Include="Shortest path first algorithm .cpp" />
     <ClCompile Include="sort 사용법.cpp" />
     <ClCompile Include="stack 사용법.cpp" />
-    <ClCompile Include="suffix array.cpp" />
+    <ClCompile Include="suffix array and LCP array.cpp" />
     <ClCompile Include="swap 사용법.cpp" />
     <ClCompile Include="topology sort.cpp" />
     <ClCompile Include="trie.cpp" />

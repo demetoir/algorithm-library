@@ -1,5 +1,5 @@
-// sa ,lcp 구현, 응용?
-//https://www.acmicpc.net/problem/11478
+// sa ,lcp 구현
+//https://www.acmicpc.net/problem/1701
 #include <stdio.h>
 #include <vector>
 #include <set>
@@ -22,17 +22,18 @@ using namespace std;
 #define all(a) (a).begin(),(a).end()
 //////////////////////////////////////////////////////////////////////////////////////////
 
-#define MAX_N 1000001
+#define MAX_N 500001
 char str[MAX_N];
 struct SA_CMP {
 	const vector<int>& g;
 	int t;
-	SA_CMP(const vector<int>& g_, int t_) :g(g_),t(t_){}
+	SA_CMP(const vector<int>& g_, int t_) :g(g_), t(t_) {}
 	bool operator() (int a, int b) {
 		if (g[a] != g[b]) return  g[a] < g[b];
 		return g[a + t] < g[b + t];
 	}
 };
+
 
 vector<int> make_SA(const char *str) {
 	int t = 1;
@@ -70,14 +71,15 @@ vector<int> make_SA(const char *str) {
 	return perm;
 }
 
+
 vector<int> make_lcp(const vector<int> &sa, const string &s) {
 	int size = sa.size();
-	vector<int> lcp(size,0);
+	vector<int> lcp(size, 0);
 	vector<int> rev(size, 0);
-	int k = 0,j;
+	int k = 0, j;
 	for (int i = 0; i < size; i++) rev[sa[i]] = i;
 	for (int i = 0; i < size; i++) {
-		if (rev[i] == 0) {k = 0;continue;}
+		if (rev[i] == 0) { k = 0; continue; }
 		j = sa[rev[i] - 1];
 		while (i + k < size && j + k < size && s[i + k] == s[j + k])k++;
 		lcp[rev[i]] = k;
@@ -86,15 +88,17 @@ vector<int> make_lcp(const vector<int> &sa, const string &s) {
 	return lcp;
 }
 
+
 int main() {
 	ss(str);
-	LL n = (LL)strlen(str);
+	int n = strlen(str);
 	vector <int> sa = make_SA(str);
+
 	vector<int > lcp = make_lcp(sa, str);
-	LL ans = (n*(n+1))/2;
+	int ans = 0;
 	for (int i = 1; i < n; i++)
-		ans -= lcp[i];
-	printf("%lld\n", ans);
+		ans = max(lcp[i], ans);
+	printf("%d\n", ans);
 
 	return  0;
 }

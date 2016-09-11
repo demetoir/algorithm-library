@@ -142,10 +142,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\문제 풀이 컴파일 솔루션\10256 돌연변이.cpp" />
     <ClCompile Include="..\문제 풀이 컴파일 솔루션\9250 문자열 집합 판별.cpp" />
     <ClCompile Include="10255 교차점.cpp" />
     <ClCompile Include="10258 스위치 배열.cpp" />
+    <ClCompile Include="11479 서로 다른 부분 문자열의 개수 2.cpp" />
     <ClCompile Include="11502 세 개의 소수 문제.cpp" />
+    <ClCompile Include="11578 서로 다른 부분 문자열의 개수.cpp" />
+    <ClCompile Include="1701 cubeditor.cpp" />
     <ClCompile Include="1708 볼록 껍질.cpp" />
     <ClCompile Include="1727 커플 만들기.cpp" />
     <ClCompile Include="1786 찾기.cpp" />
@@ -153,6 +157,7 @@
     <ClCompile Include="2281 데스노트.cpp" />
     <ClCompile Include="3079 입국 심사.cpp" />
     <ClCompile Include="9011 순서 .cpp" />
+    <ClCompile Include="9248 Suffix Array.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="9007 카누.cpp" />
