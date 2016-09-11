@@ -16,14 +16,8 @@
     <Filter Include="정수론">
       <UniqueIdentifier>{fd62cb91-7e8b-4dc8-8fd2-2ed78871424d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="DP">
-      <UniqueIdentifier>{34057a1d-dbfe-4795-ba04-4a107305108c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="그리디">
       <UniqueIdentifier>{1b8ff98e-0d85-4d9e-95be-ad311a4ab55b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="문자열">
-      <UniqueIdentifier>{2524e504-d8ce-49c9-8c41-cf229792b0ee}</UniqueIdentifier>
     </Filter>
     <Filter Include="분할 정복">
       <UniqueIdentifier>{bf2a10e0-e2ba-466e-9f3a-be8f69e2e8b3}</UniqueIdentifier>
@@ -37,211 +31,217 @@
     <Filter Include="이분 탐색">
       <UniqueIdentifier>{f6443402-099f-486e-aabe-9b1208d996a7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="라이브러리 사용법\algorithm 사용법">
-      <UniqueIdentifier>{958ca919-9423-4a38-b9a2-f011efff2225}</UniqueIdentifier>
-    </Filter>
     <Filter Include="배열검색">
       <UniqueIdentifier>{10e91532-a99b-45c6-b21a-fc2c482fb0df}</UniqueIdentifier>
     </Filter>
+    <Filter Include="문자열 검색 및 처리">
+      <UniqueIdentifier>{2524e504-d8ce-49c9-8c41-cf229792b0ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dp">
+      <UniqueIdentifier>{34057a1d-dbfe-4795-ba04-4a107305108c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dfs.cpp">
+    <ClCompile Include="그래프\Bellman-Ford algorithm.cpp">
       <Filter>그래프</Filter>
     </ClCompile>
-    <ClCompile Include="bfs.cpp">
+    <ClCompile Include="그래프\bfs.cpp">
       <Filter>그래프</Filter>
     </ClCompile>
-    <ClCompile Include="Dijkstra short path.cpp">
+    <ClCompile Include="그래프\dfs.cpp">
       <Filter>그래프</Filter>
     </ClCompile>
-    <ClCompile Include="Bellman-Ford algorithm.cpp">
+    <ClCompile Include="그래프\Dijkstra short path.cpp">
       <Filter>그래프</Filter>
     </ClCompile>
-    <ClCompile Include="max cost min flow.cpp">
-      <Filter>네트워크 플로우</Filter>
-    </ClCompile>
-    <ClCompile Include="max flow.cpp">
-      <Filter>네트워크 플로우</Filter>
-    </ClCompile>
-    <ClCompile Include="union find.cpp">
-      <Filter>트리</Filter>
-    </ClCompile>
-    <ClCompile Include="segment tree.cpp">
-      <Filter>트리</Filter>
-    </ClCompile>
-    <ClCompile Include="segment tree lazy propagation.cpp">
-      <Filter>트리</Filter>
-    </ClCompile>
-    <ClCompile Include="index tree.cpp">
-      <Filter>트리</Filter>
-    </ClCompile>
-    <ClCompile Include="bipartite matching.cpp">
-      <Filter>네트워크 플로우</Filter>
-    </ClCompile>
-    <ClCompile Include="Aho–Corasick string matching.cpp">
-      <Filter>문자열</Filter>
-    </ClCompile>
-    <ClCompile Include="kmp string matching.cpp">
-      <Filter>문자열</Filter>
-    </ClCompile>
-    <ClCompile Include="라이브러리 및 매크로.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="vector 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="priority_queue 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="pair 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="queue 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="비교자 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="stack 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="map 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="유클리드 호제법.cpp">
-      <Filter>정수론</Filter>
-    </ClCompile>
-    <ClCompile Include="lis.cpp">
-      <Filter>DP</Filter>
-    </ClCompile>
-    <ClCompile Include="lcs.cpp">
-      <Filter>DP</Filter>
-    </ClCompile>
-    <ClCompile Include="Shortest path first algorithm .cpp">
+    <ClCompile Include="그래프\Kruskal’s algorithm.cpp">
       <Filter>그래프</Filter>
     </ClCompile>
-    <ClCompile Include="소수판별법.cpp">
-      <Filter>정수론</Filter>
-    </ClCompile>
-    <ClCompile Include="모듈러 연산.cpp">
-      <Filter>정수론</Filter>
-    </ClCompile>
-    <ClCompile Include="이항계수.cpp">
-      <Filter>정수론</Filter>
-    </ClCompile>
-    <ClCompile Include="trie.cpp">
-      <Filter>문자열</Filter>
-    </ClCompile>
-    <ClCompile Include="topology sort.cpp">
+    <ClCompile Include="그래프\prim algorithm.cpp">
       <Filter>그래프</Filter>
     </ClCompile>
-    <ClCompile Include="진법 변환.cpp">
-      <Filter>정수론</Filter>
-    </ClCompile>
-    <ClCompile Include="피보나치 수.cpp">
-      <Filter>정수론</Filter>
-    </ClCompile>
-    <ClCompile Include="카탈란 수.cpp">
-      <Filter>정수론</Filter>
-    </ClCompile>
-    <ClCompile Include="오일러 피 함수.cpp">
-      <Filter>정수론</Filter>
-    </ClCompile>
-    <ClCompile Include="플로이드 와샬 알고리즘.cpp">
+    <ClCompile Include="그래프\Shortest path first algorithm .cpp">
       <Filter>그래프</Filter>
     </ClCompile>
-    <ClCompile Include="lca.cpp">
-      <Filter>트리</Filter>
+    <ClCompile Include="그래프\topology sort.cpp">
+      <Filter>그래프</Filter>
     </ClCompile>
-    <ClCompile Include="ccw.cpp">
+    <ClCompile Include="그래프\플로이드 와샬 알고리즘.cpp">
+      <Filter>그래프</Filter>
+    </ClCompile>
+    <ClCompile Include="dp\dp 최적화 기법.cpp">
+      <Filter>dp</Filter>
+    </ClCompile>
+    <ClCompile Include="dp\dp.cpp">
+      <Filter>dp</Filter>
+    </ClCompile>
+    <ClCompile Include="dp\lcs.cpp">
+      <Filter>dp</Filter>
+    </ClCompile>
+    <ClCompile Include="dp\lis.cpp">
+      <Filter>dp</Filter>
+    </ClCompile>
+    <ClCompile Include="계산 기하\Rotating Calipers.cpp">
       <Filter>계산 기하</Filter>
     </ClCompile>
-    <ClCompile Include="Graham Scan.cpp">
+    <ClCompile Include="계산 기하\벡터 클래스.cpp">
       <Filter>계산 기하</Filter>
     </ClCompile>
-    <ClCompile Include="선분의 교차를 판별.cpp">
+    <ClCompile Include="계산 기하\선분의 교차를 판별.cpp">
       <Filter>계산 기하</Filter>
     </ClCompile>
-    <ClCompile Include="Rotating Calipers.cpp">
+    <ClCompile Include="계산 기하\ccw.cpp">
       <Filter>계산 기하</Filter>
     </ClCompile>
-    <ClCompile Include="이분탐색.cpp">
-      <Filter>이분 탐색</Filter>
-    </ClCompile>
-    <ClCompile Include="set 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="hash_map 사용법.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="Kruskal’s algorithm.cpp">
-      <Filter>그래프</Filter>
-    </ClCompile>
-    <ClCompile Include="스털링수.cpp">
-      <Filter>정수론</Filter>
-    </ClCompile>
-    <ClCompile Include="prim algorithm.cpp">
-      <Filter>그래프</Filter>
-    </ClCompile>
-    <ClCompile Include="결정문제 이분탐색.cpp">
-      <Filter>이분 탐색</Filter>
-    </ClCompile>
-    <ClCompile Include="최소 정점 덮개.cpp">
-      <Filter>네트워크 플로우</Filter>
-    </ClCompile>
-    <ClCompile Include="dp.cpp">
-      <Filter>DP</Filter>
-    </ClCompile>
-    <ClCompile Include="벡터 클래스.cpp">
+    <ClCompile Include="계산 기하\Graham Scan.cpp">
       <Filter>계산 기하</Filter>
     </ClCompile>
-    <ClCompile Include="배정문제.cpp">
-      <Filter>네트워크 플로우</Filter>
-    </ClCompile>
-    <ClCompile Include="count 사용법.cpp">
-      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="fill 사용법.cpp">
-      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="find 사용법.cpp">
-      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="lowerbound 사용법.cpp">
-      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="revese 사용법.cpp">
-      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="rotate 사용법.cpp">
-      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="sort 사용법.cpp">
-      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="swap 사용법.cpp">
-      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="unique 사용법.cpp">
-      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="binary_search 사용법.cpp">
-      <Filter>라이브러리 사용법\algorithm 사용법</Filter>
-    </ClCompile>
-    <ClCompile Include="dp 최적화 기법.cpp">
-      <Filter>DP</Filter>
-    </ClCompile>
-    <ClCompile Include="job 스케줄링.cpp">
+    <ClCompile Include="그리디\job 스케줄링.cpp">
       <Filter>그리디</Filter>
     </ClCompile>
-    <ClCompile Include="트리의 지름.cpp">
-      <Filter>트리</Filter>
-    </ClCompile>
-    <ClCompile Include="그래프 분류.cpp">
+    <ClCompile Include="네트워크 플로우\그래프 분류.cpp">
       <Filter>네트워크 플로우</Filter>
     </ClCompile>
-    <ClCompile Include="suffix array and LCP array.cpp">
-      <Filter>문자열</Filter>
+    <ClCompile Include="네트워크 플로우\배정문제.cpp">
+      <Filter>네트워크 플로우</Filter>
+    </ClCompile>
+    <ClCompile Include="네트워크 플로우\최소 정점 덮개.cpp">
+      <Filter>네트워크 플로우</Filter>
+    </ClCompile>
+    <ClCompile Include="네트워크 플로우\bipartite matching.cpp">
+      <Filter>네트워크 플로우</Filter>
+    </ClCompile>
+    <ClCompile Include="네트워크 플로우\max cost min flow.cpp">
+      <Filter>네트워크 플로우</Filter>
+    </ClCompile>
+    <ClCompile Include="네트워크 플로우\max flow.cpp">
+      <Filter>네트워크 플로우</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\priority_queue 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\queue 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\queue.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\revese 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\rotate 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\set 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\sort 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\stack 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\swap 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\unique 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\vector 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\라이브러리 및 매크로.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\비교자 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\binary_search 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\count 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\fill 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\find 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\hash_map 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\lowerbound 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\map 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="라이브러리 사용법\pair 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열 검색 및 처리\kmp string matching.cpp">
+      <Filter>문자열 검색 및 처리</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열 검색 및 처리\suffix array and LCP array.cpp">
+      <Filter>문자열 검색 및 처리</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열 검색 및 처리\trie.cpp">
+      <Filter>문자열 검색 및 처리</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열 검색 및 처리\Aho–Corasick string matching.cpp">
+      <Filter>문자열 검색 및 처리</Filter>
+    </ClCompile>
+    <ClCompile Include="이분 탐색\결정문제 이분탐색.cpp">
+      <Filter>이분 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="이분 탐색\이분탐색.cpp">
+      <Filter>이분 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="정수론\유클리드 호제법.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="정수론\이항계수.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="정수론\진법 변환.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="정수론\카탈란 수.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="정수론\피보나치 수.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="정수론\모듈러 연산.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="정수론\소수판별법.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="정수론\스털링수.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="정수론\오일러 피 함수.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="트리\lca.cpp">
+      <Filter>트리</Filter>
+    </ClCompile>
+    <ClCompile Include="트리\segment tree lazy propagation.cpp">
+      <Filter>트리</Filter>
+    </ClCompile>
+    <ClCompile Include="트리\segment tree.cpp">
+      <Filter>트리</Filter>
+    </ClCompile>
+    <ClCompile Include="트리\union find.cpp">
+      <Filter>트리</Filter>
+    </ClCompile>
+    <ClCompile Include="트리\트리의 지름.cpp">
+      <Filter>트리</Filter>
+    </ClCompile>
+    <ClCompile Include="트리\index tree.cpp">
+      <Filter>트리</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
