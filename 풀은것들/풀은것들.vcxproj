@@ -149,6 +149,7 @@
     <ClCompile Include="11479 서로 다른 부분 문자열의 개수 2.cpp" />
     <ClCompile Include="11502 세 개의 소수 문제.cpp" />
     <ClCompile Include="11578 서로 다른 부분 문자열의 개수.cpp" />
+    <ClCompile Include="1657 두부장수 장홍준.cpp" />
     <ClCompile Include="1701 cubeditor.cpp" />
     <ClCompile Include="1708 볼록 껍질.cpp" />
     <ClCompile Include="1727 커플 만들기.cpp" />

@@ -74,8 +74,7 @@ vector<int> make_SA2(const char *str) {
 
 	vector <int> perm(n);
 	for (int i = 0; i < n; i++) 
-		perm[i] = i;
-	
+		perm[i] = i;	
 
 	while (t < n) {
 		SA_CMP2 cmp(group, t);

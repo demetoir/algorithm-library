@@ -55,6 +55,9 @@
     <ClCompile Include="11479 서로 다른 부분 문자열의 개수 2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1657 두부장수 장홍준.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="9007 카누.cpp">

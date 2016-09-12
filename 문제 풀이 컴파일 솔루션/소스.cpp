@@ -1,5 +1,3 @@
-// sa ,lcp 구현, 응용?
-//https://www.acmicpc.net/problem/11478
 #include <stdio.h>
 #include <vector>
 #include <set>
@@ -21,80 +19,54 @@ using namespace std;
 #define LLINF 12345678912345678
 #define all(a) (a).begin(),(a).end()
 //////////////////////////////////////////////////////////////////////////////////////////
-
-#define MAX_N 1000001
+#define MAX_N 200001
+int n;
 char str[MAX_N];
-struct SA_CMP {
-	const vector<int>& g;
-	int t;
-	SA_CMP(const vector<int>& g_, int t_) :g(g_),t(t_){}
-	bool operator() (int a, int b) {
-		if (g[a] != g[b]) return  g[a] < g[b];
-		return g[a + t] < g[b + t];
+vector <int> sa;
+
+struct CMP {
+	vector<int> &g;
+	int k;
+	CMP(vector <int> &g, int k) :g(g), k(k) {};
+	bool operator()(int a, int b) {
+		if (g[a] != g[b]) return g[a] < g[b];
+		return g[a + k] < g[b + k];
 	}
 };
 
-vector<int> make_SA(const char *str) {
-	int t = 1;
-	int n = strlen(str);
+vector <int> make_sa(const char* s) {
+	int t = 1; 
+	int n = strlen(s);
 
-	vector<int> group(n + 1);
-	for (int i = 0; i < n; i++)
-		group[i] = str[i];
-	group[n] = -1;
+	vector<int> g(n+1,0);
+	for (int i = 0; i < n; i++)g[i] = s[i];
+	g[n] = -1;
 
-	vector <int> perm(n);
-	for (int i = 0; i < n; i++) {
-		perm[i] = i;
-	}
+	vector<int>perm(n,0);
+	for (int i = 0; i < n; i++)perm[i] = i;
 
 	while (t < n) {
-		SA_CMP cmp(group, t);
+		CMP cmp(g,t);
 		sort(perm.begin(), perm.end(), cmp);
 
 		t *= 2;
-		if (t >= n)break;
+		if (t >= n) break;
+		
+		vector<int> newg(n+1,0);
+		for (int i = 0; i < n; i++){
 
-		vector<int> newgroup(n + 1);
-		newgroup[n] = -1;
-		newgroup[perm[0]] = 0;
-
-		for (int i = 1; i < n; i++) {
-			if (cmp(perm[i - 1], perm[i]))
-				newgroup[perm[i]] = newgroup[perm[i - 1]] + 1;
-			else
-				newgroup[perm[i]] = newgroup[perm[i - 1]];
 		}
-		group = newgroup;
 	}
-	return perm;
-}
 
-vector<int> make_lcp(const vector<int> &sa, const string &s) {
-	int size = sa.size();
-	vector<int> lcp(size,0);
-	vector<int> rev(size, 0);
-	int k = 0,j;
-	for (int i = 0; i < size; i++) rev[sa[i]] = i;
-	for (int i = 0; i < size; i++) {
-		if (rev[i] == 0) {k = 0;continue;}
-		j = sa[rev[i] - 1];
-		while (i + k < size && j + k < size && s[i + k] == s[j + k])k++;
-		lcp[rev[i]] = k;
-		k = max(k - 1, 0);
-	}
-	return lcp;
-}
 
+
+	return  perm;
+}
 int main() {
+	si(n);
 	ss(str);
-	LL n = (LL)strlen(str);
-	vector <int> sa = make_SA(str);
-	vector<int > lcp = make_lcp(sa, str);
-	LL ans = (n*(n+1))/2;
-	for (int i = 1; i < n; i++)
-		ans -= lcp[i];
-	printf("%lld\n", ans);
+
+
 
 	return  0;
 }

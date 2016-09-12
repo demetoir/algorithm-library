@@ -177,7 +177,6 @@
     <ClCompile Include="라이브러리 사용법\pair 사용법.cpp" />
     <ClCompile Include="라이브러리 사용법\priority_queue 사용법.cpp" />
     <ClCompile Include="라이브러리 사용법\queue 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\queue.cpp" />
     <ClCompile Include="라이브러리 사용법\revese 사용법.cpp" />
     <ClCompile Include="라이브러리 사용법\rotate 사용법.cpp" />
     <ClCompile Include="라이브러리 사용법\set 사용법.cpp" />
@@ -211,6 +210,7 @@
     <ClCompile Include="트리\트리의 지름.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="boj문제 분류.txt" />
     <Text Include="깃허브 주소.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

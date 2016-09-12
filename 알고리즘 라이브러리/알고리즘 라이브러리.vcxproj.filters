@@ -123,9 +123,6 @@
     <ClCompile Include="라이브러리 사용법\queue 사용법.cpp">
       <Filter>라이브러리 사용법</Filter>
     </ClCompile>
-    <ClCompile Include="라이브러리 사용법\queue.cpp">
-      <Filter>라이브러리 사용법</Filter>
-    </ClCompile>
     <ClCompile Include="라이브러리 사용법\revese 사용법.cpp">
       <Filter>라이브러리 사용법</Filter>
     </ClCompile>
@@ -246,5 +243,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="깃허브 주소.txt" />
+    <Text Include="boj문제 분류.txt" />
   </ItemGroup>
 </Project>
