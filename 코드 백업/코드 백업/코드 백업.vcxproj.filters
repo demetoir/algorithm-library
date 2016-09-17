@@ -13,5 +13,8 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="boj py 소스">
+      <UniqueIdentifier>{cfd97c45-11a5-4cb3-9fc9-7d4bf03ea7ed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
