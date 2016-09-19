@@ -1,0 +1,65 @@
+\begin{problem}{Crankshaft}{cranksft.in}{cranksft.out}{2 seconds}
+
+One company develops a CAD system for crankshaft design. 
+The crankshafts in question are combined of ${0 < N \le 100}$ metal 
+plates. All plates are made of the same alloy and have equal (small) 
+thickness. Each plate has the shape of a polygon with ${3 \le V_i \le 200}$ 
+vertices. All plates in the crankshaft are parallel and firmly connected 
+to each other. They are the only elements of the crankshaft. 
+
+Among other features, this CAD system should have a routine for determining 
+the rotation axis of the crankshaft. More precisely, customers sometimes
+need to find a line, perpendicular to the plane of the crankshaft plates, 
+rotation around which causes minimal vibration of the crankshaft. It is well
+known that such axis must pass through the mass center of the crankshaft.
+
+The crankshaft design is stored as a set of vertex coordinates for each plate
+in some Cartesian coordinate system. The plane $OXY$ of the system is parallel to
+the plates surfaces. All the coordinates are integer, ${-10^4 \le X_{ij}, 
+Y_{ij} \le 10^4}$, where ${1 \le j \le V_i, 1 \le i \le N}$. The vertices 
+are numbered clockwise ($OX$ axis is directed rightwards, $OY$ axis is directed
+upwards). 
+
+Your program should print the rotation axis coordinates ($X_R$ and $Y_R$). 
+The correct answer should be given even for a partially designed 
+crankshaft (consisting of two or more non-connected parts). You should suppose
+that these parts are firmly connected.
+
+\InputFile
+
+The input file consists of integer numbers, delimited by spaces and/or
+line feeds. The numbers are specified in the following order:
+
+$N$
+\par
+$V_1$ $X_{11}$ $Y_{11}$ ... $X_{1V_1}$ $Y_{1V_1}$
+\par
+...
+\par
+$V_N$ $X_{N1}$ $Y_{N1}$ ... $X_{N{V_N}}$ $Y_{N{V_N}}$
+
+\OutputFile
+
+The output file should contain two real numbers: $X_R$ and $Y_R$.
+These values must be exact to four digits to the right of the decimal point. 
+
+\Example
+
+\begin{example}
+\exmp{
+2\\
+4 -1 -1 -1 1 1 1 1 -1\\
+4 -1 -1 -1 0 0 0 0 -1
+}{
+-0.1 -0.1
+}
+\exmp{
+2\\
+3 -2 -1 -2 1 -1 0\\
+3 2 1 2 -1 1 0
+}{
+0 0
+}
+\end{example}
+
+\end{problem}

@@ -1,0 +1,196 @@
+\begin{problem}{Artinals}{artinals.in}{artinals.out}{5 seconds}
+
+\def\sU{\mathscr U}
+\let\emptyset=\varnothing
+\def\repr{\mathop{\textrm{repr}}}
+\def\nin{\not\in}
+\def\caret{\^{}}
+\def\tq#1{\langle\textit{#1}\rangle}
+\def\qq#1{\text{``{\tt #1}''}}
+\def\qb#1{\text{``{\bf #1}''}}
+\def\iff{\negthinspace\Leftrightarrow\negthinspace}
+
+Nick has recently learned about a special kind of sets called 
+{\em artinian sets} or simply {\em artinals}. These sets have the advantage 
+of possessing a finite representation, so they can be processed by a 
+computer. However, their formal definition is a bit complicated. Here it is:
+
+\begin{shortitems}
+\item The only {\em artinal of height $\leq0$} is the empty set $\emptyset$.
+\item {\em Artinals of height $\leq n$} are exactly the finite sets 
+composed of artinals of height $\leq n-1$. Here $n\geq1$ is an arbitrary 
+natural number.
+\item Finally, $A$ is an {\em artinal\/} if $A$ is an artinal of 
+height $\leq n$ for at least one integer $n$.
+\item The set of all artinals is denoted by $\sU$.
+\end{shortitems}
+
+It is immediate from the definition that an artinal of height $\leq n$ 
+is also an artinal of height $\leq n+1$. Thus for any artinal~$A$ 
+we can define its {\em height\/} $h(A)$ as the minimal integer $n$ such 
+that $A$ is an artinal of height $\leq n$. An artinal of height $n$ is 
+also called an {\em $n$-artinal}.
+
+There were two other definitions which took a lot of time 
+to understand. They are the definition of {\em canonical order} on $\sU$ 
+(denoted by $<$) and the definition of {\em canonical form} of an artinal:
+
+\begin{shortitems}
+\item The canonical form of an artinal $A$ of height $\leq n$ is a 
+representation $A=\bigl\{A_1,A_2,\ldots,A_s\bigr\}$ where $A_i$ are 
+artinals of height $\leq n-1$ and $A_1<A_2<\cdots<A_s$.
+\item If $A=\bigl\{A_1,A_2,\ldots,A_s\bigr\}$ and 
+$B=\bigl\{B_1,B_2,\ldots,B_t\bigr\}$ are two artinals of height $\leq n$ 
+written in the canonical form, then we put $A<B$ iff 
+there exists an integer $k$, $1\leq k\leq\min(s+1,t)$, such that 
+$A_j=B_j$ for all integer $j$ such that $1\leq j<k$ and 
+either $k=s+1$ or $A_k < B_k$.
+\end{shortitems}
+
+Now we can define for any artinal $A$ its canonical representation. 
+It is a string $\repr(A)$ composed of characters `{\bf \{}', `{\bf \}}' 
+and `{\tt,}' defined in the following way: $\repr(\emptyset)=\qb{\{\}}$, 
+and if $A$ is an artinal with canonical form 
+$A=\bigl\{A_1,A_2,\ldots,A_s\bigr\}$, then 
+$\repr(A)=\qb\{+\repr(A_1)+\qq,+\cdots+\qq,+\repr(A_s)+\qb\}$.
+
+The canonical representation is often rather lengthy. In order to shorten it, 
+the following definition is introduced. For any integer $n\geq0$ 
+an artinal $\underline n$ (called {\em finite ordinal}) is defined by induction
+on $n$: $\underline 0:=\emptyset$ and 
+$\underline{n+1}:=\{\underline n\}\cup\underline{n}$ for all $n\geq0$. 
+Then we can define the {\em reduced canonical representation} 
+of an artinal in the following way: We take the canonical representation 
+of this artinal and substitute $n$ for any occurrence of the ordinal $\underline n$ 
+that is not contained in an occurrence of $\underline m$ for some $m>n$.
+
+Then some operations on artinals are defined. These operations 
+(from highest priority to lowest) are:
+
+\begin{shortitems}
+\item Unary intersection $\bigcap$: for a non-empty artinal 
+$A=\bigl\{A_1,A_2,\ldots,A_s\bigr\}$ put 
+$\bigcap A:=A_1\cap A_2\cap\cdots\cap A_s$.
+\item Unary union $\bigcup$: for any artinal 
+$A=\bigl\{A_1,A_2,\ldots,A_s\bigr\}$ put 
+$\bigcup A:=A_1\cup A_2\cup\cdots\cup A_s$; $\bigcup\emptyset:=\emptyset$.
+\item Binary intersection $\cap$: $A\cap B:=\{x:x\in A\;\&\;x\in B\}$.
+\item Binary union $\cup$: $A\cup B:=\{x:x\in A\vee x\in B\}$.
+\item Binary difference $-$: $A-B:=\{x\in A: x\nin B\}$.
+\item Binary symmetrical difference $\triangle$: $A\triangle B:=(A-B)\cup(B-A)$.
+\end{shortitems}
+
+Besides, some relations between artinals are defined:
+\begin{shortitems}
+\item Equality $=$ and inequality $\neq$.
+\item Inclusion $\subset$ and $\supset$: $A\subset B\iff
+B\supset A\iff (x\in A\Rightarrow x\in B)$.
+\item Element relations $\in$ and $\ni$: $B\in A$ (equivalent to $A\ni B$) 
+means that $B$ is an element of $A$.
+\item Canonical order relations $<$, $>$, $\leq$, $\geq$ described above 
+(as usual, $A\leq B\iff((A<B)\vee(A=B))$, $A>B\iff B<A$ and 
+$A\geq B\iff B\leq A$).
+\end{shortitems}
+
+Now Nick wants you to write a program that would make some computations 
+with artinals. This program will consist of several operators, each 
+on a separate line. There are five kinds of operators:
+\begin{shortitems}
+\item Assignment operator $\tq{ident}\qq{:=}\tq{expr}$ --- sets variable 
+$\tq{ident}$ to the value of expression $\tq{expr}$.
+\item Evaluate operator $\qq{!}\tq{expr}$ --- evaluates $\tq{expr}$ 
+and prints the result in reduced canonical representation on a 
+separate line of output.
+
+\item Check condition operator $\qq{?}\tq{expr}\tq{relation}\tq{expr}$ --- 
+checks the condition and outputs either $\qq{FALSE}$ or $\qq{TRUE}$ 
+on a separate line of output.
+\item Comment operator $\qq{\#}\tq{any\_characters}$ --- the entire line 
+is copied to the output.
+\item Empty operator --- an empty line (i.e.\ line consisting only of 
+blank characters) --- does nothing.
+\end{shortitems}
+
+The following definitions are used:
+
+{\obeylines\parindent=6mm\parskip=0mm
+$\tq{ident} ::= \tq{alpha} \{\tq{alpha}\}$
+$\tq{alpha} ::= \tq{letter} | \tq{digit} | \qq{\_}$
+$\tq{digit} ::= \qq0|\qq1|\ldots|\qq9$
+$\tq{letter} ::= \qq A|\qq B|\ldots|\qq Z|\qq a|\qq b|\ldots|\qq z$
+$\tq{expr} ::= \qb\{\bigl[\tq{expr}\bigl\{\qq,\tq{expr}\bigr\}\bigr]%
+\qb\} \big| \tq{ident} \big| \tq{expr}\tq{binop}\tq{expr} \big| % 
+\tq{unop}\tq{expr} \big| \qq(\tq{expr}\qq)$
+$\tq{binop} ::= \qq+ | \qq* | \qq- | \qq\caret$
+$\tq{unop} ::= \qq+ | \qq*$
+$\tq{relation} ::= \qq{<} | \qq{>} | \qq{=} | \qq{<=} | \qq{>=} | \qq{<>} | %
+\qq{->} | \qq{<-} | \qq{<<} | \qq{>>}$
+}
+
+The binary operators (in the order they were listed in the definition 
+of $\tq{binop}$) correspond to $\cup$, $\cap$, $-$ and $\triangle$; 
+the unary operators correspond to $\bigcup$ and $\bigcap$; finally, 
+the relations correspond to $<$, $>$, $=$, $\leq$, $\geq$, $\neq$, 
+$\in$, $\ni$, $\subset$, $\supset$. Parentheses $\qq($ and $\qq)$ are 
+used to change the precedence of operations as usual. All tokens of 
+input (except several $\tq{alpha}$ forming a single $\tq{ident}$)  
+can be separated by an arbitrary number of blank characters (i.e.\ spaces 
+and tabulation characters).
+
+Besides, before the execution of the program the variables with names that 
+are decimal representations (without leading zeros) of non-negative integers 
+$n\leq2^9$ are set to the finite ordinals $\underline n$. All other 
+variables are initialized with $\emptyset$. All identifiers are case-sensitive. 
+
+\InputFile
+
+The input file consists of not more than one hundred lines each containing 
+a single operator. No line is longer than 254 characters.
+
+\OutputFile
+
+Produce one line of output for each $\qq?$, $\qq!$ and $\qq\#$ operator 
+as described above. It is guaranteed that there will be no 
+``run-time errors'' (e.g.\ unary $\bigcap$ will never be applied to an empty set).
+
+\Example
+
+\begin{example}[*\widthout{9.3cm}\noindent]
+\exmp{%
+\  !2    + 2
+!2*2
+!3-4
+\ \#  More examples!
+\-
+00 := 5+3
+! 3-5
+! 00
+! (5-3)*(5+3)
+? 3>9
+A := \{2,3,9\}
+B := \{1,7\}
+! A\caret B
+! +239
+? 2->00
+? 2<<00
+? A>>B
+! \{\{\{\},\{\{\}\},\{\}\},B,\{A\},\{B\},\{A,B\}\}+B
+}{%
+2
+2
+0
+\ \#  More examples!
+0
+5
+\{3,4\}
+FALSE
+\{1,2,3,7,9\}
+238
+TRUE
+TRUE
+FALSE
+\{1,2,7,\{1,7\},\{\{1,7\}\},\{\{1,7\},\{2,3,9\}\},\{\{2,3,9\}\}\}
+}%
+\end{example}
+
+\end{problem}

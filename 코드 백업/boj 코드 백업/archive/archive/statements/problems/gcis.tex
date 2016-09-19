@@ -1,0 +1,38 @@
+\begin{problem}{Greatest Common Increasing Subsequence}{gcis.in}{gcis.out}{2 seconds}
+
+You are given two sequences of integer numbers. 
+Write a program to determine their common increasing subsequence of maximal 
+possible length. 
+
+Sequence $S_1, S_2, \ldots, S_N$ of length $N$ is called an
+{\em increasing subsequence\/} of a sequence $A_1, A_2, \ldots, A_M$ of length $M$
+if there exist $1 \le i_1 < i_2 < \ldots < i_N \le M$ such that 
+$S_j = A_{i_j}$ for all $1 \le j \le N$, and $S_j < S_{j+1}$ for all $1 \le j < N$. 
+                 
+\InputFile
+
+Each sequence is described with $M$ --- its length ($1 \le M \le 500$) and
+$M$ integer numbers $A_i$ ($-2^{31} \le A_i < 2^{31}$) ---
+the sequence itself. 
+
+\OutputFile
+
+On the first line of the output file print $L$ --- the length of the greatest
+common increasing subsequence of both sequences. On the second line print the subsequence itself.
+If there are several possible answers, output any of them.
+
+\Example
+
+\begin{example}[*]
+\exmp{
+5
+1 4 2 5 -12
+4
+-12 1 2 4
+}{
+2
+1 4
+}%
+\end{example}
+
+\end{problem}

@@ -1,0 +1,59 @@
+!{{}}
+!{{{}}}
+!{+239,239}
+?+239>239
+A := 17
+B := 239-17
+C := A*B
+! C
+# "Recursive" definition
+17 := 17 + 18
+! 17
+LongVariable := {2, 5, 8, 3, 9} + {3, {}, 7, {0, {{}}}}
+ExMaple := LongVariable ^ {2, 3, 9}
+! LongVariable
+! ExMaple
+? LongVariable < ExMaple
+? LongVariable -> ExMaple
+? LongVariable << ExMaple
+? LongVariable >> ExMaple
+? LongVariable <- ExMaple
+? LongVariable <> ExMaple
+? LongVariable <= ExMaple
+# What do you think it can be?
+! 17 + 5
+# What do you think about modem commands?
+! ATZ
+! +++ ATH0
+!VeryLongHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeNames
+!VeryLongHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeNamez
+# Returning to A...
+A := ExMaple
+VeryLongHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeName:=A
+# ExMaple had a good value, didn't it?
+!+++++VeryLongHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeName
+A:={{{{}}}, {{{{{}}}}}}
+!+A
+!++A
+!+++A
+!++++A
+!*A
+# What do you think about this?
+!++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++512
+!512+{512}
+!512+{512}+{512+{512}}
+!512+{512}+{512+{512}}+{512+{512}+{512+{512}}}
+!512+{512}+{512+{512}}+{512+{512}+{512+{512}}}+{512+{512}+{512+{512}}+{512+{512}+{512+{512}}}}
+# Do you remember my ExMaple?
+! ExMaple
+# So more ExMaples with long names...
+VeryLongHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeName2:=1
+VeryLongHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeName2:=17
+!VeryLongHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeName2
+VeryLongHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeName3:=14
+!VeryLongHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeName
+!VeryLongHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeName2
+!VeryLongHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeHugeName3
+# Compare it!
+?{{1}}>500
+?{{1},1}>500
