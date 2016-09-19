@@ -142,15 +142,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="deque 사용법.cpp" />
     <ClCompile Include="dp\dp 최적화 기법.cpp" />
     <ClCompile Include="dp\dp.cpp" />
     <ClCompile Include="dp\lcs.cpp" />
     <ClCompile Include="dp\lis.cpp" />
+    <ClCompile Include="string 사용법.cpp" />
+    <ClCompile Include="tuple 사용법.cpp" />
     <ClCompile Include="계산 기하\ccw.cpp" />
     <ClCompile Include="계산 기하\Graham Scan.cpp" />
     <ClCompile Include="계산 기하\Rotating Calipers.cpp" />
     <ClCompile Include="계산 기하\벡터 클래스.cpp" />
-    <ClCompile Include="계산 기하\선분의 교차를 판별.cpp" />
+    <ClCompile Include="계산 기하\두선의 교차 판별.cpp" />
     <ClCompile Include="그래프\Bellman-Ford algorithm.cpp" />
     <ClCompile Include="그래프\bfs.cpp" />
     <ClCompile Include="그래프\dfs.cpp" />
@@ -161,6 +164,7 @@
     <ClCompile Include="그래프\topology sort.cpp" />
     <ClCompile Include="그래프\플로이드 와샬 알고리즘.cpp" />
     <ClCompile Include="그리디\job 스케줄링.cpp" />
+    <ClCompile Include="내부 외부 판별.cpp" />
     <ClCompile Include="네트워크 플로우\bipartite matching.cpp" />
     <ClCompile Include="네트워크 플로우\max cost min flow.cpp" />
     <ClCompile Include="네트워크 플로우\max flow.cpp" />
@@ -187,10 +191,12 @@
     <ClCompile Include="라이브러리 사용법\vector 사용법.cpp" />
     <ClCompile Include="라이브러리 사용법\라이브러리 및 매크로.cpp" />
     <ClCompile Include="라이브러리 사용법\비교자 사용법.cpp" />
+    <ClCompile Include="면적 구하기.cpp" />
     <ClCompile Include="문자열 검색 및 처리\Aho–Corasick string matching.cpp" />
     <ClCompile Include="문자열 검색 및 처리\kmp string matching.cpp" />
     <ClCompile Include="문자열 검색 및 처리\suffix array and LCP array.cpp" />
     <ClCompile Include="문자열 검색 및 처리\trie.cpp" />
+    <ClCompile Include="분할정복.cpp" />
     <ClCompile Include="이분 탐색\결정문제 이분탐색.cpp" />
     <ClCompile Include="이분 탐색\이분탐색.cpp" />
     <ClCompile Include="정수론\모듈러 연산.cpp" />
@@ -202,6 +208,7 @@
     <ClCompile Include="정수론\진법 변환.cpp" />
     <ClCompile Include="정수론\카탈란 수.cpp" />
     <ClCompile Include="정수론\피보나치 수.cpp" />
+    <ClCompile Include="최대 독립 집합.cpp" />
     <ClCompile Include="트리\index tree.cpp" />
     <ClCompile Include="트리\lca.cpp" />
     <ClCompile Include="트리\segment tree lazy propagation.cpp" />

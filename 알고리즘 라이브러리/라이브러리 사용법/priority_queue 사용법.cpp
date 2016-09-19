@@ -8,8 +8,13 @@
 //pop O(lg(n))
 //top O(1)
 //
+//
+//
 //참고 자료
 //http://koosaga.myungwoo.kr/entry/STL-priority-queue-%ED%99%9C%EC%9A%A9%EB%B2%95
+//
+//문제
+//1927
 //
 #include <queue>
 #include <functional>

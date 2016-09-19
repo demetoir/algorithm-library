@@ -4,6 +4,9 @@
 //push O(1)
 //pop O(1)
 //front O(1)
+//¹®Á¦ 
+//10845
+//1158
 
 #include <queue>
 using namespace std;

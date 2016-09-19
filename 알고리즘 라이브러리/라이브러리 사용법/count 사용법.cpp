@@ -4,6 +4,11 @@
 // 헤더 <algorithm>
 //
 //범위내에서 원소 중 원하는 값의 갯수를 찾는다
+//
+//문제 
+//10807
+//10808
+
 #include <algorithm>
 #include <vector>
 

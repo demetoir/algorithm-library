@@ -7,6 +7,10 @@
 //
 //binary_search(begin,end,value)
 //[begin 부터 end) 까지 value있으면 true 없으면 false
+//문제
+//10815
+//
+//
 #include <algorithm>
 #include <vector>
 using namespace std;

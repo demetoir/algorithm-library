@@ -87,9 +87,6 @@
     <ClCompile Include="계산 기하\벡터 클래스.cpp">
       <Filter>계산 기하</Filter>
     </ClCompile>
-    <ClCompile Include="계산 기하\선분의 교차를 판별.cpp">
-      <Filter>계산 기하</Filter>
-    </ClCompile>
     <ClCompile Include="계산 기하\ccw.cpp">
       <Filter>계산 기하</Filter>
     </ClCompile>
@@ -239,6 +236,30 @@
     </ClCompile>
     <ClCompile Include="트리\index tree.cpp">
       <Filter>트리</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="deque 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="string 사용법.cpp">
+      <Filter>라이브러리 사용법</Filter>
+    </ClCompile>
+    <ClCompile Include="계산 기하\두선의 교차 판별.cpp">
+      <Filter>계산 기하</Filter>
+    </ClCompile>
+    <ClCompile Include="면적 구하기.cpp">
+      <Filter>계산 기하</Filter>
+    </ClCompile>
+    <ClCompile Include="내부 외부 판별.cpp">
+      <Filter>계산 기하</Filter>
+    </ClCompile>
+    <ClCompile Include="최대 독립 집합.cpp">
+      <Filter>네트워크 플로우</Filter>
+    </ClCompile>
+    <ClCompile Include="분할정복.cpp">
+      <Filter>분할 정복</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

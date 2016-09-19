@@ -15,6 +15,7 @@
 //1671 상어의 저녘식사 https://www.acmicpc.net/problem/1671
 //11377 열혈강호 3 https://www.acmicpc.net/problem/11377
 //11378 열혈강호 4 https://www.acmicpc.net/problem/11378
+//3295 단방향 링크 네트워크 https://www.acmicpc.net/problem/3295
 //1799 비숍 https://www.acmicpc.net/problem/1799
 
 #include <vector>

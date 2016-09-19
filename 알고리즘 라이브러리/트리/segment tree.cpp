@@ -15,20 +15,20 @@
 //2357 최소값과 최대값 https://www.acmicpc.net/problem/2357
 //https://www.acmicpc.net/problem/1275
 //1377 세그먼트 트리
-//히스토그램에서 가장 큰 직사각형(https://www.acmicpc.net/problem/6549)
-//가장 긴 증가하는 부분 수열 2 (https ://www.acmicpc.net/problem/12015)
-//가장 긴 증가하는 부분 수열 3 (https ://www.acmicpc.net/problem/12738)
-//굉장한 학생(https ://www.acmicpc.net/problem/2336)
-//터보소트(https ://www.acmicpc.net/problem/3006)
-//영화 수집(https ://www.acmicpc.net/problem/3653)
-//공장(https ://www.acmicpc.net/problem/7578)
-//나무 심기(https ://www.acmicpc.net/problem/1280)
-//라운드 로빈 스케줄러(https ://www.acmicpc.net/problem/12016)
-//불만 정렬(https ://www.acmicpc.net/problem/5012)
-//음주 코딩(https ://www.acmicpc.net/problem/5676)
-//사탕상자(https ://www.acmicpc.net/problem/2243)
-//순열(https ://www.acmicpc.net/problem/1849)
-//조세퍼스 문제(https ://www.acmicpc.net/problem/1168)
+//6549 히스토그램에서 가장 큰 직사각형(https://www.acmicpc.net/problem/6549)
+//12015 가장 긴 증가하는 부분 수열 2 (https ://www.acmicpc.net/problem/12015)
+//12738 가장 긴 증가하는 부분 수열 3 (https ://www.acmicpc.net/problem/12738)
+//2336 굉장한 학생(https ://www.acmicpc.net/problem/2336)
+//3006 터보소트(https ://www.acmicpc.net/problem/3006)
+//3653 영화 수집(https ://www.acmicpc.net/problem/3653)
+//7578 공장(https ://www.acmicpc.net/problem/7578)
+//1280 나무 심기(https ://www.acmicpc.net/problem/1280)
+//12016 라운드 로빈 스케줄러(https ://www.acmicpc.net/problem/12016)
+//5012 불만 정렬(https ://www.acmicpc.net/problem/5012)
+//5676 음주 코딩(https ://www.acmicpc.net/problem/5676)
+//2243 사탕상자(https ://www.acmicpc.net/problem/2243)
+//1849 순열(https ://www.acmicpc.net/problem/1849)
+//1168 조세퍼스 문제(https ://www.acmicpc.net/problem/1168)
 //
 
 

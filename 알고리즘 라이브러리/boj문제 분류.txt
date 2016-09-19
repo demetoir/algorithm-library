@@ -279,7 +279,7 @@ C:\Python27\python.exe "C:/cygwin64/home/YUJUN/py script.py"
 2096 dp
 2098 dp 외판원
 2109 그리디
-2110 이분 탐색 결정문제 ??
+2110 이분 탐색 결정문제
 2133 dp
 2143 ???
 2153 문자열 소수
@@ -546,7 +546,7 @@ C:\Python27\python.exe "C:/cygwin64/home/YUJUN/py script.py"
 3062 구현 
 3067 dp
 3076 구현
-3079 이분탐색 결정문제
+3079 이분탐색 결정문제 그리디
 3226 구현
 3295 이분매칭
 3409 구현 완전탐색

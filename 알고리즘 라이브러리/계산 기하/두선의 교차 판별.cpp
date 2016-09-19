@@ -1,6 +1,9 @@
-//선분 교차 판별
+//두선의 교차판별
+//직선과 직선의 교차 판별
+//선분과 선분의 교차 판별 
+//교차점 위치 구하기
 //
-
+//
 //참고 자료
 //
 //http://bowbowbow.tistory.com/17
@@ -63,7 +66,7 @@ struct vector2 {
 	}
 };
 
-
+//a->b 로가는 직선과 c->d 로 가는 직선의 교차를 판별하고 교차하면 x에 교차점을 반환한다
 bool lineIntersection(vector2 a, vector2 b,
 	vector2 c, vector2 d, vector2 &x) {
 	double det = (b - a).cross(d - c);
@@ -72,6 +75,7 @@ bool lineIntersection(vector2 a, vector2 b,
 	x = a+(b - a)*((c - a).cross(d - c) / det);
 	return true;
 }
+
 
 double ccw(vector2 a, vector2 b) {
 	return a.cross(b);
@@ -98,6 +102,7 @@ bool inbounding_ractangle(vector2 p, vector2 a, vector2 b) {
 	return p == a || p == b || (a < p && p < b);
 }
 
+//a->b 로가는 선분과 c->d 로 가는 선분의 교차를 판별하고 교차하면 p에 교차점을 반환한다
 bool segmentIntersection(vector2 a, vector2 b,
 	vector2 c, vector2 d, vector2 &p) {
 	if (!lineIntersection(a, b, c, d, p))
@@ -107,7 +112,7 @@ bool segmentIntersection(vector2 a, vector2 b,
 		inbounding_ractangle(p, c, d);
 }
 
-
+//a->b 로가는 선분과 c->d 로 가는 선분의 교차를 판별만한다
 bool segmentIntersection(vector2 a, vector2 b,
 	vector2 c, vector2 d) {
 	double ab = ccw(a, b, c) * ccw(a, b, d);
@@ -122,7 +127,7 @@ bool segmentIntersection(vector2 a, vector2 b,
 }
 
 
-//교차점 위치 구하지 않고 교차 하는지만 판단하는것
+//교차점 위치 구하지 않고 교차 하는지만 판단하는것 간단한버전..
 //점벡터
 struct P {
 	int x, y;
@@ -143,19 +148,25 @@ int ccw(const P &a, const P &b, const P &c) {
 	return 0;
 }
 
-//0 교차 x 1점 교차  -1 여러점 교차
+//0 :교차하지 않음 
+//1: 한점에서 교차  
+//-1: 여러점에서 교차(겹친다)
 int insc(L p, L q) {
+	//선분이 서로 한 직선위에 있을때
 	if (!ccw(p.a, p.b, q.a) && !ccw(p.a, p.b, q.b)) {
 		if (p.a.s() > p.b.s()) swap(p.a, p.b);
 		if (q.a.s() > q.b.s()) swap(q.a, q.b);
 		int a = p.a.s(), b = p.b.s(), c = q.a.s(), d = q.b.s();
+		//서로 만나지 않음
 		if (b < c || d < a) return 0;
 
+		//선분간에 서로 끝점에서 만난다
 		if (b == c || a == d) return 1;
 
 		return -1;
 	}
 
+	//선분이 
 	if (ccw(p.a, p.b, q.a) == ccw(p.a, p.b, q.b)
 		|| ccw(q.a, q.b, p.a) == ccw(q.a, q.b, p.b))
 		return 0;

@@ -6,7 +6,10 @@
 //갱신 O(log(n))
 //제거 O(log(n))
 //접근 O(log(n))
-
+//문제 
+//1076
+//1764
+//
 #include <map>
 using namespace std;
 
@@ -28,7 +31,7 @@ int main() {
 	mii[4] = 40;
 
 	//제거
-	//mii.erase();
+	//mii.erase(key_value);
 	
 	//접근
 	mii[3];

@@ -2,6 +2,14 @@
 //라이브러리 : algorithm
 //defualt로 오름차순 정렬
 //시간복잡도 O(nlog(n))
+//문제 
+//
+//2750
+//1181
+//11650
+//11651
+//10825
+//10814
 
 #include <algorithm>
 #include <functional>

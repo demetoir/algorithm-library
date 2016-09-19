@@ -8,6 +8,9 @@
 //
 //문제
 //2252 줄세우기 https://www.acmicpc.net/problem/2252
+//1766 문제집
+//2056 작업
+//1516 게임 개발
 
 #include <vector>
 #include <queue>

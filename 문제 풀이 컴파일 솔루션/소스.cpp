@@ -1,72 +1,77 @@
-#include <stdio.h>
+#include <cstdio>
+#include <cstring>
 #include <vector>
-#include <set>
-#include <algorithm>
-#include <queue>
-#include <math.h>
-#include <iostream>
-#include <stack>
-#include <string>
-#include <string.h>
+
+#define ll long long
+#define si(a) scanf("%d", &(a));
+#define sll(a) scanf("%lld", &(a));
+#define pi(a) printf("%d\n", (a));
+#define MAX(a,b) (a)>(b)?(a):(b)
+#define MIN(a,b) (a)<(b)?(a):(b)
+#define FOR(a,b,c) for((a)=(b);(a)<=(c);(a)++)
+#define _FOR(a,b,c) for((a)=(b);(a)<(c);(a)++)
+
 using namespace std;
 
-#define LL long long
-#define pii pair < int,int>
-#define si(a) scanf("%d",&(a))
-#define ss(a) scanf("%s",(a))
-#define sLL(a) scanf("%lld",&(a))
-#define INF 1234567890
-#define LLINF 12345678912345678
-#define all(a) (a).begin(),(a).end()
-//////////////////////////////////////////////////////////////////////////////////////////
-#define MAX_N 200001
-int n;
-char str[MAX_N];
-vector <int> sa;
+int n, m, k;
+bool vi[1234];
+int back[1234];
+vector<int> G[1234];
 
-struct CMP {
-	vector<int> &g;
-	int k;
-	CMP(vector <int> &g, int k) :g(g), k(k) {};
-	bool operator()(int a, int b) {
-		if (g[a] != g[b]) return g[a] < g[b];
-		return g[a + k] < g[b + k];
-	}
-};
+bool dfs(int x) {
+	if (vi[x]) return false;
+	vi[x] = true;
 
-vector <int> make_sa(const char* s) {
-	int t = 1; 
-	int n = strlen(s);
-
-	vector<int> g(n+1,0);
-	for (int i = 0; i < n; i++)g[i] = s[i];
-	g[n] = -1;
-
-	vector<int>perm(n,0);
-	for (int i = 0; i < n; i++)perm[i] = i;
-
-	while (t < n) {
-		CMP cmp(g,t);
-		sort(perm.begin(), perm.end(), cmp);
-
-		t *= 2;
-		if (t >= n) break;
-		
-		vector<int> newg(n+1,0);
-		for (int i = 0; i < n; i++){
-
+	int i;
+	_FOR(i, 0, G[x].size()) {
+		int next = G[x][i];
+		if (back[next] == -1 || dfs(back[next])){
+			back[next] = x;
+			return true;
 		}
 	}
 
-
-
-	return  perm;
+	return false;
 }
+
+int bimatch() {
+	int size = 0;
+	memset(back, -1, sizeof(back));
+	int i, cnt = 0;
+
+	FOR(i, 1, n) {
+		memset(vi, false, sizeof(vi));
+		if (dfs(i)) size++;
+	}
+
+	while (cnt < k) {
+		int tmp = cnt;
+		FOR(i, 1, n) {
+			memset(vi, false, sizeof(vi));
+			if (dfs(i)) {
+				size++;
+				cnt++;
+			}
+		}
+		if (tmp == cnt) break;
+	}
+
+	return size;
+}
+
 int main() {
-	si(n);
-	ss(str);
+	si(n); si(m); si(k);
 
+	int i, j;
+	FOR(i, 1, n) {
+		int t; si(t);
+		_FOR(j, 0, t) {
+			int w; si(w);
+			G[i].push_back(w);
+		}
+	}
 
+	pi(bimatch());
 
-	return  0;
+	return 0;
 }

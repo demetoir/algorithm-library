@@ -1,7 +1,10 @@
 //find 사용법
 // 시간 복잡도 O(n)
 // 헤더 <algorithm>
-//범위내의 원소중 value 의 갯수르 ㄹ찾는다
+//범위내의 원소중 value 의 갯수를 찾는다
+
+//문제
+// 10809
 #include <algorithm>
 #include <iostream>
 #include <vector>
