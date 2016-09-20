@@ -1,3 +1,7 @@
+//dp k번째 답
+//dp를 구하는거 는 쉽다
+//k번째를 구하는것에서 인덱스 처리를 조심해야한다
+
 #include <stdio.h>
 #include <vector>
 #include <set>

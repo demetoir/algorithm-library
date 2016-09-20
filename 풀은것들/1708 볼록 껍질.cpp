@@ -1,3 +1,5 @@
+// 볼록껍질 그라함 스캔
+
 #include <iostream>
 #include <stdio.h>
 #include <vector>

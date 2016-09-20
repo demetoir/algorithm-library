@@ -1,5 +1,5 @@
 // 3033 가장 긴 문자열
-// sa,lcp
+// sa,lcp 구현
 
 #include <string>
 #include <vector>

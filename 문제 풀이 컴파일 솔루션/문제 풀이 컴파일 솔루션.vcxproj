@@ -148,6 +148,7 @@
   <ItemGroup>
     <Text Include="output.output" />
     <Text Include="input.input" />
+    <Text Include="편집용.txt" />
     <Text Include="내가 풀은 문제 분류.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

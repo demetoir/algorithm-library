@@ -1,4 +1,7 @@
-
+//11502
+//완전 탐색 문제이다
+//a+b+c = d 라면
+//a+b= d-c 로 변형해서 푼다
 
 #include <stdio.h>
 #include <iostream>

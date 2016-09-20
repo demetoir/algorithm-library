@@ -1,4 +1,9 @@
-// sa ,lcp 구현, 응용?
+// sa ,lcp 응용 하
+//sa 와 lcp의 응용문제중 가장 쉬운문제인것같다
+//첫단계로 풀기 좋다
+//lcp 를 구했다면 앞에서 겹치는놈들을 제외한 길이만큼 서로 다르므로 
+//이것들의 합을 구하면 된다
+
 //https://www.acmicpc.net/problem/11478
 #include <stdio.h>
 #include <vector>

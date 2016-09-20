@@ -1,5 +1,7 @@
 //정렬, 배열검색, 투포인터
-//
+//처음에는 그냥 이분탐색으로 찾으려 했는데 시간초과
+//그래서 투포인터로 풀었다
+
 #include <stdio.h>
 #include <vector>
 #include <set>

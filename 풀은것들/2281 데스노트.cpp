@@ -1,3 +1,8 @@
+
+// dp 막대기 나누기
+//보통의 막대기 나누기 dp 에서 답을 구할떄 
+//마지막은 포함이 되지 않으니 따로 처리한다
+
 #include <iostream>
 #include <stdio.h>
 #include <vector>

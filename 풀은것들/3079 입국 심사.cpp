@@ -1,3 +1,9 @@
+//3079 입국심사
+//이분탐색 결정문제 
+//전형적인 이분탐색 결정문제이다
+//내부의 결정문제는 그리디이다 
+//
+
 #include <stdio.h>
 #include <iostream>
 #include <vector>

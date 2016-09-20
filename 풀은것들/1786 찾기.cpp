@@ -1,3 +1,5 @@
+
+// kmp ±¸Çö
 #include <cstdio>
 #include <vector>
 #include <queue>

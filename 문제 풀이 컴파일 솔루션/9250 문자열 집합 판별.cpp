@@ -1,4 +1,5 @@
 //문자열 매칭 아호코라식 기본구현
+//
 #include <stdio.h>
 #include <vector>
 #include <set>
@@ -116,8 +117,6 @@ int ahoCorasick(const string& s, Node* root) {
 }
 
 char pattern[100000];
-
-
 int main() {
 	Node root;
 	si(n);
