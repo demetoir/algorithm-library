@@ -37,8 +37,8 @@ struct vector2 {
 		return vector2(x + rhs.x, y + rhs.y);
 	}
 
-	vector2 operator - (const vector2 &rhs) const {
-		return vector2(x + rhs.x, y + rhs.y);
+	vector2 operator - (const vector2 &rhs)const {
+		return vector2(x - rhs.x, y - rhs.y);
 	}
 
 	vector2 operator * (double rhs) const {
@@ -62,9 +62,10 @@ struct vector2 {
 	}
 	vector2 project(const vector2& rhs) const {
 		vector2 r = rhs.normalize();
-		return r * (r.dot(*this));
+		return r * r.dot(*this);
 	}
 };
+
 
 //a->b 로가는 직선과 c->d 로 가는 직선의 교차를 판별하고 교차하면 x에 교차점을 반환한다
 bool lineIntersection(vector2 a, vector2 b,

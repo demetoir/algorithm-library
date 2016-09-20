@@ -261,6 +261,18 @@
     <ClCompile Include="분할정복.cpp">
       <Filter>분할 정복</Filter>
     </ClCompile>
+    <ClCompile Include="two pointer.cpp">
+      <Filter>완전 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="line sweeping.cpp">
+      <Filter>완전 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="양쪽으로 왔다갔다 하며 증가하는 dp.cpp">
+      <Filter>dp</Filter>
+    </ClCompile>
+    <ClCompile Include="직사각형의 합집합 면적.cpp">
+      <Filter>계산 기하</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="깃허브 주소.txt" />

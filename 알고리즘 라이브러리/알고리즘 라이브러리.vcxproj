@@ -147,8 +147,10 @@
     <ClCompile Include="dp\dp.cpp" />
     <ClCompile Include="dp\lcs.cpp" />
     <ClCompile Include="dp\lis.cpp" />
+    <ClCompile Include="line sweeping.cpp" />
     <ClCompile Include="string 사용법.cpp" />
     <ClCompile Include="tuple 사용법.cpp" />
+    <ClCompile Include="two pointer.cpp" />
     <ClCompile Include="계산 기하\ccw.cpp" />
     <ClCompile Include="계산 기하\Graham Scan.cpp" />
     <ClCompile Include="계산 기하\Rotating Calipers.cpp" />
@@ -197,6 +199,7 @@
     <ClCompile Include="문자열 검색 및 처리\suffix array and LCP array.cpp" />
     <ClCompile Include="문자열 검색 및 처리\trie.cpp" />
     <ClCompile Include="분할정복.cpp" />
+    <ClCompile Include="양쪽으로 왔다갔다 하며 증가하는 dp.cpp" />
     <ClCompile Include="이분 탐색\결정문제 이분탐색.cpp" />
     <ClCompile Include="이분 탐색\이분탐색.cpp" />
     <ClCompile Include="정수론\모듈러 연산.cpp" />
@@ -208,6 +211,7 @@
     <ClCompile Include="정수론\진법 변환.cpp" />
     <ClCompile Include="정수론\카탈란 수.cpp" />
     <ClCompile Include="정수론\피보나치 수.cpp" />
+    <ClCompile Include="직사각형의 합집합 면적.cpp" />
     <ClCompile Include="최대 독립 집합.cpp" />
     <ClCompile Include="트리\index tree.cpp" />
     <ClCompile Include="트리\lca.cpp" />

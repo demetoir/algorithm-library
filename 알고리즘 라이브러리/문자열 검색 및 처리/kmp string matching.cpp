@@ -4,7 +4,7 @@
 //한 패턴이 나타나는 모든 위치를 찾는다
 //
 //시간복잡도 O(N + H)
-//N -> 패턴길이, H-> 찾을 문자열 길이
+//N -> 패턴길이, H-> 짚더미 문자열 길이
 //
 //참고 자료
 //https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm

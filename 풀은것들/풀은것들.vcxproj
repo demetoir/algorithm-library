@@ -149,6 +149,7 @@
     <ClCompile Include="11479 서로 다른 부분 문자열의 개수 2.cpp" />
     <ClCompile Include="11502 세 개의 소수 문제.cpp" />
     <ClCompile Include="11578 서로 다른 부분 문자열의 개수.cpp" />
+    <ClCompile Include="1606 반복 부분문자열.cpp" />
     <ClCompile Include="1657 두부장수 장홍준.cpp" />
     <ClCompile Include="1701 cubeditor.cpp" />
     <ClCompile Include="1708 볼록 껍질.cpp" />
@@ -159,6 +160,7 @@
     <ClCompile Include="3079 입국 심사.cpp" />
     <ClCompile Include="9011 순서 .cpp" />
     <ClCompile Include="9248 Suffix Array.cpp" />
+    <ClCompile Include="가장 긴 문자열.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="9007 카누.cpp" />

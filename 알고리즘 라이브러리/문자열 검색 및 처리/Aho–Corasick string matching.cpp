@@ -1,21 +1,23 @@
 //aho-corasick
 //
+//kmp를 공부할것
 //
-//시간복잡도 O(N + P)
+//시간복잡도 O(N+M + P)
 //N : 찾으려고하는 문자열 길이
+//m : 찾으려고하는 짚더미 문자열 길이
 //P : 패턴의 출현 횟수
 //
+//아호 코라식은 실패함수
 //
 //참고 자료
-//
+//http://www.slideshare.net/ssuser81b91b/ahocorasick-algorithm
+//http://channelofchaos.tistory.com/24
+//http://hwamir.tistory.com/5
+//http://blog.ivank.net/aho-corasick-algorithm-in-as3.html
+//알고리즘 문제해결 2권
 //
 //문제
-//
-//
-//
-//
-//
-//
+//백준 그룹 문제집 참조
 //
 
 #include <string>

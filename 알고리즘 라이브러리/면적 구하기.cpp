@@ -3,6 +3,7 @@
 #include <vector>
 using namespace std;
 
+const double PI = 2.0 * acos(0.0);
 
 struct vector2 {
 	double x, y;
@@ -20,8 +21,8 @@ struct vector2 {
 		return vector2(x + rhs.x, y + rhs.y);
 	}
 
-	vector2 operator - (double rhs) const {
-		return vector2(x*rhs, y*rhs);
+	vector2 operator - (const vector2 &rhs)const {
+		return vector2(x - rhs.x, y - rhs.y);
 	}
 
 	vector2 operator * (double rhs) const {
@@ -48,6 +49,7 @@ struct vector2 {
 		return r * r.dot(*this);
 	}
 };
+
 
 double getarea(const vector<vector2> &p) {
 	double ret = 0;

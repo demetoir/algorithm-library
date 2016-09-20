@@ -58,6 +58,12 @@
     <ClCompile Include="1657 두부장수 장홍준.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1606 반복 부분문자열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="가장 긴 문자열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="9007 카누.cpp">

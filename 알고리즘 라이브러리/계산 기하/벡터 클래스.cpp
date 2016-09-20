@@ -5,7 +5,7 @@ const double PI = 2.0 * acos(0.0);
 
 struct vector2 {
 	double x, y;
-	vector2(double x_ = 0,double y_ =0):x(x_),y(y_){}
+	vector2(double x_ = 0, double y_ = 0) :x(x_), y(y_) {}
 
 	bool operator == (const vector2 & rhs) const {
 		return x == rhs.x && y == rhs.y;
@@ -14,13 +14,13 @@ struct vector2 {
 	bool operator < (const vector2 & rhs) const {
 		return x != rhs.x ? x < rhs.x : y < rhs.y;
 	}
-	
+
 	vector2 operator + (const vector2 &rhs)const {
 		return vector2(x + rhs.x, y + rhs.y);
 	}
 
-	vector2 operator - (double rhs) const {
-		return vector2(x*rhs, y*rhs);
+	vector2 operator - (const vector2 &rhs)const {
+		return vector2(x - rhs.x, y - rhs.y);
 	}
 
 	vector2 operator * (double rhs) const {
@@ -35,7 +35,7 @@ struct vector2 {
 
 	double polar() const { return fmod(atan2(y, x) + 2 * PI, 2 * PI); }
 
-	double dot(const vector2& rhs)const{
+	double dot(const vector2& rhs)const {
 		return x*rhs.y + rhs.x*y;
 	}
 
@@ -47,8 +47,6 @@ struct vector2 {
 		return r * r.dot(*this);
 	}
 };
-
-
 
 
 

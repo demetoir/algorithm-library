@@ -37,5 +37,5 @@ int getsum(int i) {
 }
 
 
-
+//2Â÷¿ø index tree 
 

@@ -16,7 +16,7 @@ int n;
 struct sa_cmp {
 	vector<int> &g;
 	int k;
-	sa_cmp(vector<int> &g, int k ): g(g),k(k){}
+	sa_cmp(vector<int> &g, int k) : g(g), k(k) {}
 	bool operator() (int a, int b) {
 		if (g[a] != g[b]) return g[a] < g[b];
 		return g[a + k] < g[b + k];
@@ -25,7 +25,7 @@ struct sa_cmp {
 vector<int> make_sa(const string &str) {
 	int k = 1;
 	int size = str.size();
-	vector<int>g(size+1);
+	vector<int>g(size + 1);
 	for (int i = 0; i < str.size(); i++) {
 		g[i] = str[i];
 	}
@@ -40,7 +40,7 @@ vector<int> make_sa(const string &str) {
 
 		k *= 2;
 		if (k >= size) break;
-		vector<int> newg(size+1);
+		vector<int> newg(size + 1);
 		newg[size] = -1;
 		newg[perm[0]] = 0;
 		for (int i = 1; i < size; i++) {
@@ -57,7 +57,7 @@ vector<int> make_sa(const string &str) {
 	return perm;
 }
 
-vector<int> make_lcp(const vector<int>&sa,const string &str) {
+vector<int> make_lcp(const vector<int>&sa, const string &str) {
 	int size = sa.size();
 	vector<int> lcp(size);
 	vector<int> rev(size);
@@ -66,10 +66,10 @@ vector<int> make_lcp(const vector<int>&sa,const string &str) {
 	int k = 0;
 	for (int i = 1; i < size; i++) {
 		if (rev[i] == 0) {
-			k = 0; 
+			k = 0;
 			continue;
 		}
-		int j = sa[rev[i]-1];
+		int j = sa[rev[i] - 1];
 		while (i + k < size && j + k < size && str[i + k] == str[j + k]) k++;
 		lcp[rev[i]] = k;
 		k = max(k - 1, 0);
