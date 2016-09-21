@@ -142,20 +142,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="deque 사용법.cpp" />
     <ClCompile Include="dp\dp 최적화 기법.cpp" />
     <ClCompile Include="dp\dp.cpp" />
     <ClCompile Include="dp\lcs.cpp" />
     <ClCompile Include="dp\lis.cpp" />
-    <ClCompile Include="line sweeping.cpp" />
-    <ClCompile Include="string 사용법.cpp" />
-    <ClCompile Include="tuple 사용법.cpp" />
-    <ClCompile Include="two pointer.cpp" />
+    <ClCompile Include="dp\막대기 자르기 dp.cpp" />
+    <ClCompile Include="dp\양쪽으로 왔다갔다 하며 증가하는 dp.cpp" />
     <ClCompile Include="계산 기하\ccw.cpp" />
     <ClCompile Include="계산 기하\Graham Scan.cpp" />
     <ClCompile Include="계산 기하\Rotating Calipers.cpp" />
-    <ClCompile Include="계산 기하\벡터 클래스.cpp" />
+    <ClCompile Include="계산 기하\내부 외부 판별.cpp" />
     <ClCompile Include="계산 기하\두선의 교차 판별.cpp" />
+    <ClCompile Include="계산 기하\면적 구하기.cpp" />
+    <ClCompile Include="계산 기하\벡터 클래스.cpp" />
+    <ClCompile Include="계산 기하\직사각형의 합집합 면적.cpp" />
     <ClCompile Include="그래프\Bellman-Ford algorithm.cpp" />
     <ClCompile Include="그래프\bfs.cpp" />
     <ClCompile Include="그래프\dfs.cpp" />
@@ -166,41 +166,20 @@
     <ClCompile Include="그래프\topology sort.cpp" />
     <ClCompile Include="그래프\플로이드 와샬 알고리즘.cpp" />
     <ClCompile Include="그리디\job 스케줄링.cpp" />
-    <ClCompile Include="내부 외부 판별.cpp" />
     <ClCompile Include="네트워크 플로우\bipartite matching.cpp" />
     <ClCompile Include="네트워크 플로우\max cost min flow.cpp" />
     <ClCompile Include="네트워크 플로우\max flow.cpp" />
     <ClCompile Include="네트워크 플로우\그래프 분류.cpp" />
     <ClCompile Include="네트워크 플로우\배정문제.cpp" />
+    <ClCompile Include="네트워크 플로우\최대 독립 집합.cpp" />
     <ClCompile Include="네트워크 플로우\최소 정점 덮개.cpp" />
-    <ClCompile Include="라이브러리 사용법\binary_search 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\count 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\fill 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\find 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\hash_map 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\lowerbound 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\map 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\pair 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\priority_queue 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\queue 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\revese 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\rotate 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\set 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\sort 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\stack 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\swap 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\unique 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\vector 사용법.cpp" />
-    <ClCompile Include="라이브러리 사용법\라이브러리 및 매크로.cpp" />
-    <ClCompile Include="라이브러리 사용법\비교자 사용법.cpp" />
-    <ClCompile Include="막대기 자르기 dp.cpp" />
-    <ClCompile Include="면적 구하기.cpp" />
     <ClCompile Include="문자열 검색 및 처리\Aho–Corasick string matching.cpp" />
     <ClCompile Include="문자열 검색 및 처리\kmp string matching.cpp" />
     <ClCompile Include="문자열 검색 및 처리\suffix array and LCP array.cpp" />
     <ClCompile Include="문자열 검색 및 처리\trie.cpp" />
     <ClCompile Include="분할정복.cpp" />
-    <ClCompile Include="양쪽으로 왔다갔다 하며 증가하는 dp.cpp" />
+    <ClCompile Include="완전탐색\line sweeping.cpp" />
+    <ClCompile Include="완전탐색\two pointer.cpp" />
     <ClCompile Include="이분 탐색\결정문제 이분탐색.cpp" />
     <ClCompile Include="이분 탐색\이분탐색.cpp" />
     <ClCompile Include="정수론\모듈러 연산.cpp" />
@@ -212,18 +191,12 @@
     <ClCompile Include="정수론\진법 변환.cpp" />
     <ClCompile Include="정수론\카탈란 수.cpp" />
     <ClCompile Include="정수론\피보나치 수.cpp" />
-    <ClCompile Include="직사각형의 합집합 면적.cpp" />
-    <ClCompile Include="최대 독립 집합.cpp" />
     <ClCompile Include="트리\index tree.cpp" />
     <ClCompile Include="트리\lca.cpp" />
     <ClCompile Include="트리\segment tree lazy propagation.cpp" />
     <ClCompile Include="트리\segment tree.cpp" />
     <ClCompile Include="트리\union find.cpp" />
     <ClCompile Include="트리\트리의 지름.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="boj문제 분류.txt" />
-    <Text Include="깃허브 주소.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
