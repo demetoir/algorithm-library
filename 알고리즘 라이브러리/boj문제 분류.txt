@@ -228,7 +228,7 @@ C:\Python27\python.exe "C:/cygwin64/home/YUJUN/py script.py"
 1867 이분매칭 플로우
 1871 구현
 1874 스택
-1890 dp 막대기 나누기
+1890 dp 2차원 기초
 1904 dp 막대기 나누기
 1912 dp 막대기 나누기
 1913 출력 수학
