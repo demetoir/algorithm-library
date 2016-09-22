@@ -191,6 +191,7 @@
     <ClCompile Include="정수론\진법 변환.cpp" />
     <ClCompile Include="정수론\카탈란 수.cpp" />
     <ClCompile Include="정수론\피보나치 수.cpp" />
+    <ClCompile Include="트리\index tree, segment tree 좌표압축.cpp" />
     <ClCompile Include="트리\index tree.cpp" />
     <ClCompile Include="트리\lca.cpp" />
     <ClCompile Include="트리\segment tree lazy propagation.cpp" />

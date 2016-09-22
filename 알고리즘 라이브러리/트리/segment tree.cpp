@@ -37,7 +37,7 @@
 using namespace std;
 #define MAX_N 100000 
 vector<int> tree;
-int main() {
+int init_tree() {
 	int n = MAX_N;
 	int h = ceil(log2(n));
 	int treesize = 1 << (h + 1);

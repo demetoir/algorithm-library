@@ -201,5 +201,8 @@
     <ClCompile Include="완전탐색\two pointer.cpp">
       <Filter>완전 탐색</Filter>
     </ClCompile>
+    <ClCompile Include="트리\index tree, segment tree 좌표압축.cpp">
+      <Filter>트리</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

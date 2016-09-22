@@ -66,7 +66,7 @@ void update(int node, int left, int right, int a, int b) {
 	tree[node] = tree[node * 2] + tree[node * 2 + 1];
 }
 
-int main() {
+int init_tree() {
 	n = MAX_N;
 	int h = ceil(log2(n));
 	int size = 1 << (h + 1);
