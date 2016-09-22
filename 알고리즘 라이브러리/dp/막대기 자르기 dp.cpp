@@ -70,7 +70,7 @@ int find1(int x) {
 	//큰 막대기 dp[x]를 구한다 
 	for (int i = 0; i < x; i++) {
 		//작은 막대기dp[i]와 조각처리를 구현한다
-		
+		dp1[x] = dp1[i] /*+ (i+1 ~ x) 조각에대한 처리*/;		
 	}
 	return dp1[x];
 }
@@ -89,6 +89,7 @@ int find2(int x) {
 		//큰막대기 dp[i]를 구한다 
 		for (int j = 0; j < x; j++) {
 			//작은 막대기 dp[j] 와 조각 처리를 구현한다			
+			dp1[i] = dp1[j] /*+ (j+1 ~ x) 조각에대한 처리*/;
 		}
 	}
 

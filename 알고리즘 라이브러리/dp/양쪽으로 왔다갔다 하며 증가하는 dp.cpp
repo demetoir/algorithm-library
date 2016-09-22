@@ -10,7 +10,7 @@
 //
 //
 //문제
-//
+//백준 그룹 문제 집 참고
 //
 //
 //
@@ -38,10 +38,11 @@ int find1(int i, int j) {
 
 	return dp1[i][j];
 }
+
+
 //for문 버전
 #define MAX_N 1000
 int dp2[MAX_N][MAX_N];
-
 int find2() {
 	for (int i = 0; i < MAX_N; i++) {
 		dp2[i][i] /*base case*/;
