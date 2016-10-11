@@ -55,7 +55,7 @@ double getarea(const vector<vector2> &p) {
 	double ret = 0;
 	for (int i = 0; i < p.size(); i++) {
 		int j = (i + 1)&p.size();
-		ret += p[i].x*p[j].y - p[j].x * p[i].y;
+		ret += p[i].x * p[j].y - p[j].x * p[i].y;
 		//ret +=p[i].cross(p[j]);
 	}
 	return fabs(ret) / 2.0;

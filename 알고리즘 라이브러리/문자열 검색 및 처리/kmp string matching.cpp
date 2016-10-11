@@ -21,13 +21,6 @@
 //
 #include <vector>
 using namespace std;
-#define MAX_N 100001
-#define MAX_H 100001
-int pie[MAX_N];//실패 함수
-int str[MAX_H];//찾을 짚더미
-int patern[MAX_N];// 찾을 패턴
-int h;//찾을 짚더비 길이
-int n;//찾을 패턴 길이 
 
 #define MAX_N 1000001
 #define MAX_H 1000001
@@ -37,6 +30,7 @@ char patern[MAX_N];// 찾을 패턴
 int h;//찾을 짚더비 길이
 int n;//찾을 패턴 길이 
 vector<int>ans;
+
 void make_Pie() {
 	//start =1 로 시작함  
 	int start = 1, matched = 0;

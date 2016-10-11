@@ -101,7 +101,7 @@ int scan() {
 	points[minindex] = points[0];
 	points[0] = minp;
 
-	// 나머지 점들으 ㄹ기준점으로부터의 각도순으로 소트한다
+	// 나머지 점들을 기준점으로부터의 각도순으로 소트한다
 	sort(points + 1, points + n, cmp);
 
 	//스택으로부터 반시계 방향인 점들을 고른다

@@ -27,7 +27,7 @@
 using namespace std;
 
 int seq1[1000];
-//쉬운 dp
+//n^2 버전
 #define MAX_N 1001
 int n;
 int seq[MAX_N];
@@ -48,6 +48,8 @@ int lis1() {
 	return 0;
 }
 
+
+// n*log(n)버전
 //lower_bound 이용시
 int seq2[100000];
 int dp2[100000];

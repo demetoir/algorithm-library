@@ -136,9 +136,9 @@ struct P {
 } B[4];
 
 //선분 벡터
-struct L {
-	L() {}
-	L(const P &a, const P &b) : a(a), b(b) {}
+struct segment {
+	segment() {}
+	segment(const P &a, const P &b) : a(a), b(b) {}
 	P a, b;
 } A;
 
@@ -152,7 +152,7 @@ int ccw(const P &a, const P &b, const P &c) {
 //0 :교차하지 않음 
 //1: 한점에서 교차  
 //-1: 여러점에서 교차(겹친다)
-int insc(L p, L q) {
+int insc(segment p, segment q) {
 	//선분이 서로 한 직선위에 있을때
 	if (!ccw(p.a, p.b, q.a) && !ccw(p.a, p.b, q.b)) {
 		if (p.a.s() > p.b.s()) swap(p.a, p.b);

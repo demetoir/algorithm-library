@@ -63,37 +63,37 @@ struct SA_CMP2 {
 		return group[a + t] < group[b + t];
 	}
 };
-vector<int> make_SA2(const char *str) {
-	int t = 1;
-	int n = strlen(str);
+vector<int> make_SA2(string &str) {
+	int k = 1;
+	int size = str.size();
 
-	vector<int> group(n + 1);
-	for (int i = 0; i < n; i++)
-		group[i] = str[i];
-	group[n] = -1;
+	vector<int> g(size + 1);
+	for (int i = 0; i < size; i++)
+		g[i] = str[i];
+	g[size] = -1;
 
-	vector <int> perm(n);
-	for (int i = 0; i < n; i++) 
+	vector <int> perm(size);
+	for (int i = 0; i < size; i++) 
 		perm[i] = i;	
 
-	while (t < n) {
-		SA_CMP2 cmp(group, t);
+	while (k < size) {
+		SA_CMP2 cmp(g, k);
 		sort(perm.begin(), perm.end(), cmp);
 
-		t *= 2;
-		if (t >= n)break;
+		k *= 2;
+		if (k >= size)break;
 
-		vector<int> newgroup(n + 1);
-		newgroup[n] = -1;
-		newgroup[perm[0]] = 0;
+		vector<int> newg(size + 1);
+		newg[size] = -1;
+		newg[perm[0]] = 0;
 
-		for (int i = 1; i < n; i++) {
+		for (int i = 1; i < size; i++) {
 			if (cmp(perm[i - 1], perm[i]))
-				newgroup[perm[i]] = newgroup[perm[i - 1]] + 1;
+				newg[perm[i]] = newg[perm[i - 1]] + 1;
 			else
-				newgroup[perm[i]] = newgroup[perm[i - 1]];
+				newg[perm[i]] = newg[perm[i - 1]];
 		}
-		group = newgroup;
+		g = newg;
 	}
 	return perm;
 }

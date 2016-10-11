@@ -204,5 +204,11 @@
     <ClCompile Include="트리\index tree, segment tree 좌표압축.cpp">
       <Filter>트리</Filter>
     </ClCompile>
+    <ClCompile Include="중국인 나머지 정리(CRT).cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
+    <ClCompile Include="확장 유클리드.cpp">
+      <Filter>정수론</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

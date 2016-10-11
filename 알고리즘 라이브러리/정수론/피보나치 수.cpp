@@ -51,7 +51,7 @@ LL fib3(LL n) {
 	LL a = fib3(n / 2);
 	LL b = fib3(n / 2 + 1);
 	LL val;
-	if (n % 2 == 1) {
+	if (n % 2 == 0) {
 		val = a*(2 * b - a);
 	}
 	else {
